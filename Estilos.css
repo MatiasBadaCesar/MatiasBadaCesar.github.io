@@ -1,0 +1,126 @@
+
+/*    
+*{} Este es un selector universal/general
+*/
+/*
+div {} Seleccionamos todos los div
+div p {} Estamos siendo especificos
+div > p{} Esto selecciona los "p" que esten seguidos del div, ignorando los que sigan a acontinuacion
+input[type] {} Selecciona los input que tengan el atributo type
+input[type="text"] {} Mas especifico, pues seleccionas los que tengan la propiedad "text" 
+*/
+*{
+    padding: 0;
+    margin: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    background: black url('Imagen/fondo.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.contenedor{
+    width: 1000px;
+    margin: 20px auto;
+    overflow: hidden;
+}
+
+header{
+    background: #fff;
+}
+header nav{
+    width: 100%;
+}
+header nav ul{
+    width: 100%;
+    overflow: hidden;
+    list-style: none;
+}
+header nav ul li{
+    float: left;
+}
+header nav ul li a{
+    text-decoration: none;
+    display: inline-block;
+    padding: 15px 20px;
+    color: black;
+
+}  
+header nav ul li a:hover{
+    background: black;
+    color: #fff;
+}
+
+.main{
+    width: 700px;
+    background: white;
+    float: left;
+}
+.main .image{
+    width: 100%;
+}
+.main .image img{
+    width: 100%;
+    vertical-align: top;
+}
+.main .posts{
+    padding: 40px;
+}
+.main .posts article h2{
+    margin-bottom: 20px;
+    color: #424242;
+}
+.main .posts article p{
+    margin-bottom:15px;
+    line-height: 27px;
+}
+
+
+aside{
+    width: 300px;
+    background: #161f26;
+    padding: 20px;
+    color: white;
+    float: left;
+}
+aside .widget{
+    margin-bottom: 20px;
+}
+aside .widget .titulo{
+    color: #ff8000;
+    border-bottom: 1px solid #ff8000;
+    margin-bottom: 10px;
+}
+aside .widget ul{
+    list-style: none;
+}
+aside .widget ul li{
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    padding: 10px 0;
+}
+aside .widget ul li a{
+    color:white;
+    text-decoration: none;
+}
+aside .widget ul li a:hover{
+    color:#8f8f8f; 
+}
+aside .widget p{
+    line-height: 27px;
+}
+
+footer{
+    width: 700px;
+    clear:left;
+    background: black;
+    color: white;
+    padding: 15px 0;
+    text-align: center;
+}
+

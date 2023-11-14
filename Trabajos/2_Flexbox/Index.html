@@ -5,66 +5,83 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gimnasio</title>
+    <title>Documental</title>
     <link rel="stylesheet" href="Estilos.css">
-    <link rel="shorcut icon" type="image/x-icon" href="imagen/Icono.png">
+    <link rel="shorcut icon" type="image/x-icon" href="imagen/Icon.png">
+
+    
+  <style>
+    img{
+      width: 100%;
+    }
+    body {
+      background: url(imagen/Fondo.jpg)  ; 
+      background-size: cover;
+      background-repeat: no-repeat;
+      margin: 0;
+      height: 100vh;
+    }
+  </style>
+
 </head>
 <body>
-    <div class="contenedor">
+    <div class="contenedor"> 
         <header>
-            <div class="logo">
-                <img src="Imagen/Logo.png" width="400" alt="">
-            </div>
-            <nav class="menu">
-                <a href="#">Inicio</a>
-                <a href="#">Blog</a>
-                <a href="#">Contacto</a>
+            <nav>
+                <ul>
+                    <li><a href="#">Inicio</a></li>
+                    <li><a href="#">Acerca de</a></li>
+                    <li><a href="#">Productos</a></li>
+                    <li><a href="#">Contacto</a></li>
+                </ul>
             </nav>
         </header>
         <section class="main">
-            <article>
-                <div class="thumb">
-                    <img src="Imagen/Portada.png" alt=""> 
-                </div>
-                <h2>Fitness, ¿Que es y para que sirve?</h2>
-                <p><b>Mejora de la salud: </b>Mantenerse en buena forma física ayuda a prevenir enfermedades crónicas como la diabetes tipo 2.</p>
-                <p><b>Aumento de la energía: </b>El ejercicio regular puede aumentar los niveles de energía y reducir la fatiga.</p> 
-                <p><b>Control del peso: </b>La actividad física regular quema calorías y ayuda a mantener un peso saludable.</p>
-                <p><b>Mejora de la fuerza y la resistencia: </b>Puedes aumentar tu fuerza muscular y tu capacidad cardiovascular.</p>
-                <p><b>Mejora de la apariencia: </b>El fitness puede ayudar a mejorar la composición corporal, tonificar los músculos y reducir la grasa corporal.</p>
-                <p><b>Aumento de la longevidad: </b>Las personas que mantienen un nivel adecuado de fitness a menudo tienen una mayor esperanza de vida y una menor probabilidad de desarrollar enfermedades relacionadas con el envejecimiento.</p>
-                <p>
-                    Es importante hablar con un profesional de la salud antes de comenzar cualquier programa de ejercicios, 
-                    especialmente si tienes condiciones médicas preexistentes o preocupaciones de salud.
-                </p>
-            </article>
+            <div class="imagen">
+                <img src="imagen/Portada.jpg" alt="" width="700">
+            </div>
+            <section class="posts">
+                <article>
+                    <h2>La Supervivencia</h2>
+                    <p>
+                        A través del proceso evolutivo, la naturaleza ha logrado adaptarse a casi cualquier ambiente que existe en la tierra. 
+                        Por esta razón, algunos animales sobreviven en hábitats tan extremos como el desierto, la alta montaña y hasta las 
+                        profundidades marinas a las que el hombre no puede llegar.
+                    </p>
+                    <p>
+                        Sobre todo, nos llama la atención cómo estos animales de alta montaña pueden sobrevivir en condiciones tan adversas. 
+                        Sin embargo, como dice el refrán popular, “la naturaleza es sabia” y les ha otorgado las herramientas para adaptarse 
+                        a tales circunstancias. En este artículo te brindaremos información acerca de algunas especies que habitan las áreas 
+                        de más altura del planeta.
+                    </p>
+                </article>
+            </section>
         </section>
         <aside>
-            <div class="ad">
-                <p><b>Definición de objetivos:</b><br>Te ayudaremos a establecer objetivos claros y alcanzables.</p>
-                <br>
-                <p><b>Ejercicio y nutrición:</b><br>Explicaremos la importancia de una combinación adecuada de ejercicio y nutrición. Sumando consejos sobre cómo comenzar a hacer ejercicio de manera segura.</p>
-                <br>
-                <p><b>Planificación de ejercicios:</b><br>Iremos por ejercicios básicos y adecuados para principiantes. Calentamiento, estiramientos y ejercicios cardiovasculares.</p>
-                <br>
-                <p><b>Planificación de comidas:</b><br>Daremos pautas simples sobre cómo planificar comidas equilibradas y saludables. Desayunos, almuerzos y cenas nutritivas.</p>
-                <br>
-                <p><b>Hidratación y descanso:</b><br>La hidratación adecuada y el descanso para la recuperación muscular, es fundamental.</p>
+            <div class="widget">
+                <h3 class="titulo">Articulos Destacados</h3>
+                <ul>
+                    <li><a href="#">Aves</a></li>
+                    <li><a href="#">Felinos</a></li>
+                    <li><a href="#">Cabras</a></li>
+                    <li><a href="#">Vegetacion</a></li>
+                    <li><a href="#">Turismo</a></li>
+                </ul>
             </div>
-            <div class="ad">
-                <p></p>
-                <br><br><br><br><br><br><br><br><br>
+            <div class="widget">
+                <h3 class="titulo">Informacion</h3>
+                <p>
+                    Cuando India era una colonia británica, un equipo de agrimensores decidió medir la altura de todas las cumbres del Himalaya.
+                    Se interesaron particularmente por una que superaba a todas los demás: la cima XV.
+                    Calcularon su altitud en 9.000 metros por sobre el nivel del mar, lo cual convirtió a la montaña en la más alta del mundo.
+                </p>
             </div>
         </aside>
         <footer>
-            <div class="autor">
-                <p>Creado por Matías Badaloni - Unidos Al Exito</p>
-            </div>
-
-            <div class="red-sociales">
-                <a href="https://www.youtube.com/">Nuestras Redes</a>
-            </div>
+            <p>
+                © 2023 MBC. La MBC no se hace responsable del contenido de sitios externos.
+            </p>
         </footer>
-   </div>
+    </div>
 </body>
 </html>

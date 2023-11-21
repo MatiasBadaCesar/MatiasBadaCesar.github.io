@@ -1,0 +1,10 @@
+JavaScript:
+¿Qué es? JavaScript es un lenguaje de programación de alto nivel que se utiliza para agregar interactividad a las páginas web. Es un lenguaje de scripting que se ejecuta en el navegador web del usuario, lo que permite realizar acciones en respuesta a eventos del usuario o cambios en la página.
+Para qué se utiliza: 
+JavaScript se utiliza para una variedad de tareas en diseño web, como validar formularios, crear animaciones, manipular el DOM (Document Object Model) para cambiar el contenido de una página en tiempo real, interactuar con servicios web a través de AJAX para cargar datos dinámicamente y mucho más. Es una parte fundamental del desarrollo web moderno.
+
+jQuery:
+¿Qué es? jQuery es una biblioteca de JavaScript que simplifica la manipulación del DOM y el manejo de eventos. Fue diseñada para facilitar tareas comunes de JavaScript, haciendo que el código sea más conciso y compatible entre navegadores.
+Para qué se utiliza: 
+jQuery se utiliza para simplificar tareas que de otro modo requerirían una cantidad significativa de código JavaScript puro. Por ejemplo, jQuery hace que sea más fácil seleccionar elementos HTML, animar elementos, gestionar eventos y realizar llamadas AJAX. Es especialmente útil para los desarrolladores que desean acelerar el desarrollo web y mantener la compatibilidad entre navegadores.
+

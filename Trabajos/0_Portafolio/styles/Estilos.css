@@ -1,0 +1,684 @@
+
+html {
+	font-size:65.9%;
+}
+* {
+	margin: 0;
+	padding: 0;
+}
+ul, li {
+	list-style: none;
+}
+input {
+	border: none;
+}
+body {
+  width: 144rem;
+}.portafolio-giQ {
+  box-sizing: border-box;
+  padding-top: 0.1rem;
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  background-color: #ffffff;
+}
+.portafolio-giQ .auto-group-echs-rmJ {
+  margin-bottom: 2.9rem;
+  width: 100%;
+  height: 87.5rem;
+  position: relative;
+  flex-shrink: 0;
+}
+.portafolio-giQ .auto-group-echs-rmJ .fondo-jCp {
+  box-sizing: border-box;
+  padding: 4rem 22rem 34.7rem 52rem;
+  width: 144rem;
+  height: 60rem;
+  position: absolute;
+  left: 0;
+  top: 0;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url('../assets/imagen-bg.png');
+}
+.portafolio-giQ .auto-group-echs-rmJ .fondo-jCp .menu-QJx {
+  margin: 0rem 0rem 5.8rem 46.5rem;
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+  font-size: 2rem;
+}
+.portafolio-giQ .auto-group-echs-rmJ .fondo-jCp .menu-QJx .acerca-de-vo6 {
+  margin-right: 1.6rem;
+  cursor: pointer;
+  font-weight: 300;
+  line-height: 1.3625;
+  color: #000000;
+  font-family: Open Sans, 'Source Sans Pro';
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+.portafolio-giQ .auto-group-echs-rmJ .fondo-jCp .menu-QJx .trabajos-Uy2 {
+  margin-right: 1.7rem;
+  cursor: pointer;
+  font-weight: 300;
+  line-height: 1.3625;
+  color: #000000;
+  font-family: Open Sans, 'Source Sans Pro';
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+.portafolio-giQ .auto-group-echs-rmJ .fondo-jCp .menu-QJx .contacto-BMe {
+  cursor: pointer;
+  font-weight: 300;
+  line-height: 1.3625;
+  color: #000000;
+  font-family: Open Sans, 'Source Sans Pro';
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+.portafolio-giQ .auto-group-echs-rmJ .fondo-jCp .logo-hat {
+  margin-right: 30rem;
+  width: 40rem;
+  height: 13.3rem;
+  position: relative;
+  border-radius: 1.6rem;
+  flex-shrink: 0;
+}
+.portafolio-giQ .auto-group-echs-rmJ .fondo-jCp .logo-hat .desarrollador-web-RFz {
+  width: 21.2rem;
+  height: 3.5rem;
+  position: absolute;
+  left: 9rem;
+  top: 7.5rem;
+  font-size: 2.5rem;
+  font-weight: 300;
+  line-height: 1.3625;
+  color: #000000;
+  font-family: Open Sans, 'Source Sans Pro';
+  white-space: nowrap;
+}
+.portafolio-giQ .auto-group-echs-rmJ .fondo-jCp .logo-hat .matias-badaloni-K6U {
+  width: 35.6rem;
+  height: 6.9rem;
+  position: absolute;
+  left: 1.9rem;
+  top: 1rem;
+  font-size: 5rem;
+  font-weight: 300;
+  line-height: 1.3625;
+  color: #000000;
+  font-family: Open Sans, 'Source Sans Pro';
+  white-space: nowrap;
+}
+.portafolio-giQ .auto-group-echs-rmJ .fondo-jCp .logo-hat .cuadro-RQQ {
+  width: 40rem;
+  height: 12rem;
+  position: absolute;
+  left: 0;
+  top: 0;
+  border: solid 0.2rem #000000;
+  box-sizing: border-box;
+  border-radius: 1.6rem;
+}
+.portafolio-giQ .auto-group-echs-rmJ .acerga-de-Cxt {
+  width: 82.8rem;
+  height: 37rem;
+  position: absolute;
+  left: 30.6rem;
+  top: 50.5rem;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+.portafolio-giQ .auto-group-echs-rmJ .acerga-de-Cxt .perfil-XVN {
+  margin: 0rem 31.9rem 3rem 31.9rem;
+  width: calc(100% - 63.8rem);
+  height: 19rem;
+  
+  vertical-align: top;
+  border:5px solid rgba(255, 255, 255, 0.8);
+  box-sizing: border-box;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url('../assets/perfil-bg.png');
+  border-radius: 9.5rem;
+  flex-shrink: 0;
+}
+.portafolio-giQ .auto-group-echs-rmJ .acerga-de-Cxt .acerca-de-oBz {
+  margin: 0rem 0rem 2.9rem 1.5rem;
+  font-size: 4rem;
+  font-weight: 300;
+  line-height: 1.3618164062;
+  color: #000000;
+  font-family: Open Sans, 'Source Sans Pro';
+  white-space: nowrap;
+  display: flex;
+  align-items: baseline;
+  flex-shrink: 0;
+}
+.portafolio-giQ .auto-group-echs-rmJ .acerga-de-Cxt .acerca-de-oBz .acerca-de-oBz-sub-0 {
+  font-size: 4rem;
+  font-weight: 300;
+  line-height: 1.3625;
+  color: #dd8200;
+  font-family: Open Sans, 'Source Sans Pro';
+}
+.portafolio-giQ .auto-group-echs-rmJ .acerga-de-Cxt .acerca-de-oBz .acerca-de-oBz-sub-1 {
+  font-size: 4rem;
+  font-weight: 300;
+  line-height: 1.3625;
+  color: #000000;
+  font-family: Open Sans, 'Source Sans Pro';
+}
+.portafolio-giQ .auto-group-echs-rmJ .acerga-de-Cxt .soy-matas-badaloni-diseador-web-comprometido-en-ofrecer-calidad-y-creatividad-a-precios-accesibles-hablemos-de-tu-proyecto-3e4 {
+  max-width: 82.8rem;
+  text-align: center;
+  font-size: 2.4rem;
+  font-weight: 600;
+  line-height: 1.3625;
+  color: #5a5a5a;
+  font-family: Open Sans, 'Source Sans Pro';
+  flex-shrink: 0;
+}
+.portafolio-giQ .auto-group-echs-rmJ .acerga-de-Cxt .soy-matas-badaloni-diseador-web-comprometido-en-ofrecer-calidad-y-creatividad-a-precios-accesibles-hablemos-de-tu-proyecto-3e4 .soy-matas-badaloni-diseador-web-comprometido-en-ofrecer-calidad-y-creatividad-a-precios-accesibles-hablemos-de-tu-proyecto-3e4-sub-0 {
+}
+.portafolio-giQ .auto-group-echs-rmJ .acerga-de-Cxt .soy-matas-badaloni-diseador-web-comprometido-en-ofrecer-calidad-y-creatividad-a-precios-accesibles-hablemos-de-tu-proyecto-3e4 .soy-matas-badaloni-diseador-web-comprometido-en-ofrecer-calidad-y-creatividad-a-precios-accesibles-hablemos-de-tu-proyecto-3e4-sub-1 {
+  font-size: 2.4rem;
+  font-weight: 600;
+  line-height: 1.3625;
+  color: #3065f0;
+  font-family: Open Sans, 'Source Sans Pro';
+}
+.portafolio-giQ .auto-group-echs-rmJ .acerga-de-Cxt .soy-matas-badaloni-diseador-web-comprometido-en-ofrecer-calidad-y-creatividad-a-precios-accesibles-hablemos-de-tu-proyecto-3e4 .soy-matas-badaloni-diseador-web-comprometido-en-ofrecer-calidad-y-creatividad-a-precios-accesibles-hablemos-de-tu-proyecto-3e4-sub-2 {
+}
+.portafolio-giQ .auto-group-echs-rmJ .acerga-de-Cxt .soy-matas-badaloni-diseador-web-comprometido-en-ofrecer-calidad-y-creatividad-a-precios-accesibles-hablemos-de-tu-proyecto-3e4 .soy-matas-badaloni-diseador-web-comprometido-en-ofrecer-calidad-y-creatividad-a-precios-accesibles-hablemos-de-tu-proyecto-3e4-sub-3 {
+  font-size: 2.4rem;
+  font-weight: 600;
+  line-height: 1.3625;
+  color: #3065f0;
+  font-family: Open Sans, 'Source Sans Pro';
+}
+.portafolio-giQ .auto-group-echs-rmJ .acerga-de-Cxt .soy-matas-badaloni-diseador-web-comprometido-en-ofrecer-calidad-y-creatividad-a-precios-accesibles-hablemos-de-tu-proyecto-3e4 .soy-matas-badaloni-diseador-web-comprometido-en-ofrecer-calidad-y-creatividad-a-precios-accesibles-hablemos-de-tu-proyecto-3e4-sub-4 {
+}
+.portafolio-giQ .auto-group-echs-rmJ .acerga-de-Cxt .soy-matas-badaloni-diseador-web-comprometido-en-ofrecer-calidad-y-creatividad-a-precios-accesibles-hablemos-de-tu-proyecto-3e4 .soy-matas-badaloni-diseador-web-comprometido-en-ofrecer-calidad-y-creatividad-a-precios-accesibles-hablemos-de-tu-proyecto-3e4-sub-5 {
+  font-size: 2.4rem;
+  font-weight: 600;
+  line-height: 1.3625;
+  color: #3065f0;
+  font-family: Open Sans, 'Source Sans Pro';
+}
+.portafolio-giQ .auto-group-echs-rmJ .acerga-de-Cxt .soy-matas-badaloni-diseador-web-comprometido-en-ofrecer-calidad-y-creatividad-a-precios-accesibles-hablemos-de-tu-proyecto-3e4 .soy-matas-badaloni-diseador-web-comprometido-en-ofrecer-calidad-y-creatividad-a-precios-accesibles-hablemos-de-tu-proyecto-3e4-sub-6 {
+}
+.portafolio-giQ .auto-group-echs-rmJ .acerga-de-Cxt .soy-matas-badaloni-diseador-web-comprometido-en-ofrecer-calidad-y-creatividad-a-precios-accesibles-hablemos-de-tu-proyecto-3e4 .soy-matas-badaloni-diseador-web-comprometido-en-ofrecer-calidad-y-creatividad-a-precios-accesibles-hablemos-de-tu-proyecto-3e4-sub-7 {
+  font-size: 2.4rem;
+  font-weight: 600;
+  line-height: 1.3625;
+  color: #3065f0;
+  font-family: Open Sans, 'Source Sans Pro';
+}
+.portafolio-giQ .auto-group-echs-rmJ .acerga-de-Cxt .soy-matas-badaloni-diseador-web-comprometido-en-ofrecer-calidad-y-creatividad-a-precios-accesibles-hablemos-de-tu-proyecto-3e4 .soy-matas-badaloni-diseador-web-comprometido-en-ofrecer-calidad-y-creatividad-a-precios-accesibles-hablemos-de-tu-proyecto-3e4-sub-8 {
+  font-size: 2.4rem;
+  font-weight: 600;
+  line-height: 1.3625;
+  color: #3065f0;
+  font-family: Open Sans, 'Source Sans Pro';
+}
+.portafolio-giQ .trabajos-f56 {
+  margin-bottom: 4rem;
+  box-sizing: border-box;
+  padding: 4rem 21.2rem 9.8rem 21.6rem;
+  width: 100%;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  background-color: #f2f2f2;
+  flex-shrink: 0;
+}
+.portafolio-giQ .trabajos-f56 .trabajos-xpt {
+  margin: 0rem 0.4rem 3.3rem 0rem;
+  text-align: center;
+  font-size: 4rem;
+  font-weight: 300;
+  line-height: 1.3625;
+  color: #323068;
+  font-family: Open Sans, 'Source Sans Pro';
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+.portafolio-giQ .trabajos-f56 .trabajos-Gag {
+  width: 100%;
+  display: flex;
+  column-gap: 2.4rem;
+  align-items: flex-end;
+  border-radius: 1.6rem;
+  flex-shrink: 0;
+}
+.portafolio-giQ .trabajos-f56 .trabajos-Gag .auto-group-gmgp-P9W {
+  width: 23.5rem;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 0;
+}
+.portafolio-giQ .trabajos-f56 .trabajos-Gag .auto-group-gmgp-P9W .trabajo-1-7rC {
+  margin-bottom: 2.7rem;
+  width: 100%;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  border-radius: 1.6rem;
+  flex-shrink: 0;
+}
+.portafolio-giQ .trabajos-f56 .trabajos-Gag .auto-group-gmgp-P9W .trabajo-1-7rC .imagen-TfA {
+  margin-bottom: 0.3551rem;
+  width: 23.5rem;
+  height: 23.4rem;
+  object-fit: cover;
+  vertical-align: top;
+  border-radius: 1.6rem;
+  flex-shrink: 0;
+}
+.portafolio-giQ .trabajos-f56 .trabajos-Gag .auto-group-gmgp-P9W .trabajo-1-7rC .cafeteria-KzC {
+  margin-bottom: 0.9449rem;
+  font-size: 1.6rem;
+  font-weight: 300;
+  line-height: 1.3625;
+  color: #3895ea;
+  font-family: Open Sans, 'Source Sans Pro';
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+.portafolio-giQ .trabajos-f56 .trabajos-Gag .auto-group-gmgp-P9W .trabajo-1-7rC .jquery-js-39W {
+  margin-right: 0.1rem;
+  font-size: 1.4rem;
+  font-weight: 300;
+  line-height: 1.3625;
+  color: #5a5a5a;
+  font-family: Open Sans, 'Source Sans Pro';
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+.portafolio-giQ .trabajos-f56 .trabajos-Gag .auto-group-gmgp-P9W .trabajo-3-AE8 {
+  width: 100%;
+  row-gap: 1rem;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  border-radius: 1.6rem;
+  flex-shrink: 0;
+}
+.portafolio-giQ .trabajos-f56 .trabajos-Gag .auto-group-gmgp-P9W .trabajo-3-AE8 .imagen-hzk {
+  width: 23.5rem;
+  height: 23.5rem;
+  object-fit: cover;
+  vertical-align: top;
+  border-radius: 1.6rem;
+  flex-shrink: 0;
+}
+.portafolio-giQ .trabajos-f56 .trabajos-Gag .auto-group-gmgp-P9W .trabajo-3-AE8 .documental-rMr {
+  margin-right: 0.1rem;
+  font-size: 1.6rem;
+  font-weight: 300;
+  line-height: 1.3625;
+  color: #3895ea;
+  font-family: Open Sans, 'Source Sans Pro';
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+.portafolio-giQ .trabajos-f56 .trabajos-Gag .auto-group-gmgp-P9W .trabajo-3-AE8 .html-css-NLC {
+  margin-right: 0.1rem;
+  font-size: 1.4rem;
+  font-weight: 300;
+  line-height: 1.3625;
+  color: #5a5a5a;
+  font-family: Open Sans, 'Source Sans Pro';
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+.portafolio-giQ .trabajos-f56 .trabajos-Gag .auto-group-ecyl-Hi4 {
+  margin-bottom: 0.1rem;
+  width: 23.5rem;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 0;
+}
+.portafolio-giQ .trabajos-f56 .trabajos-Gag .auto-group-ecyl-Hi4 .trabajo-6-S5A {
+  margin-bottom: 2rem;
+  width: 100%;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  border-radius: 1.6rem;
+  flex-shrink: 0;
+}
+.portafolio-giQ .trabajos-f56 .trabajos-Gag .auto-group-ecyl-Hi4 .trabajo-6-S5A .imagen-mt8 {
+  margin-bottom: 0.9794rem;
+  width: 23.5rem;
+  height: 23.4206rem;
+  object-fit: cover;
+  vertical-align: top;
+  border-radius: 1.6rem;
+  flex-shrink: 0;
+}
+.portafolio-giQ .trabajos-f56 .trabajos-Gag .auto-group-ecyl-Hi4 .trabajo-6-S5A .turismo-txk {
+  margin: 0rem 0.2rem 1rem 0rem;
+  font-size: 1.6rem;
+  font-weight: 300;
+  line-height: 1.3625;
+  color: #3895ea;
+  font-family: Open Sans, 'Source Sans Pro';
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+.portafolio-giQ .trabajos-f56 .trabajos-Gag .auto-group-ecyl-Hi4 .trabajo-6-S5A .wordpress-BS4 {
+  margin-right: 0.4rem;
+  font-size: 1.4rem;
+  font-weight: 300;
+  line-height: 1.3625;
+  color: #5a5a5a;
+  font-family: Open Sans, 'Source Sans Pro';
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+.portafolio-giQ .trabajos-f56 .trabajos-Gag .auto-group-ecyl-Hi4 .trabajo-7-hvC {
+  width: 100%;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  border-radius: 1.6rem;
+  flex-shrink: 0;
+}
+.portafolio-giQ .trabajos-f56 .trabajos-Gag .auto-group-ecyl-Hi4 .trabajo-7-hvC .imagen-UAG {
+  margin-bottom: 0.9794rem;
+  width: 23.5rem;
+  height: 23.4206rem;
+  object-fit: cover;
+  vertical-align: top;
+  border-radius: 1.6rem;
+  flex-shrink: 0;
+}
+.portafolio-giQ .trabajos-f56 .trabajos-Gag .auto-group-ecyl-Hi4 .trabajo-7-hvC .fotgrafo-1AC {
+  margin: 0rem 0.7rem 1rem 0rem;
+  font-size: 1.6rem;
+  font-weight: 300;
+  line-height: 1.3625;
+  color: #3895ea;
+  font-family: Open Sans, 'Source Sans Pro';
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+.portafolio-giQ .trabajos-f56 .trabajos-Gag .auto-group-ecyl-Hi4 .trabajo-7-hvC .figma-iqJ {
+  margin-right: 0.1rem;
+  font-size: 1.4rem;
+  font-weight: 300;
+  line-height: 1.3625;
+  color: #5a5a5a;
+  font-family: Open Sans, 'Source Sans Pro';
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+.portafolio-giQ .trabajos-f56 .trabajos-Gag .auto-group-qv1e-SWQ {
+  width: 23.5rem;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 0;
+}
+.portafolio-giQ .trabajos-f56 .trabajos-Gag .auto-group-qv1e-SWQ .trabajo-4-o64 {
+  margin-bottom: 2.4rem;
+  width: 100%;
+  row-gap: 1rem;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  border-radius: 1.6rem;
+  flex-shrink: 0;
+}
+.portafolio-giQ .trabajos-f56 .trabajos-Gag .auto-group-qv1e-SWQ .trabajo-4-o64 .imagen-wi4 {
+  width: 23.5rem;
+  height: 23.5rem;
+  object-fit: cover;
+  vertical-align: top;
+  border-radius: 1.6rem;
+  flex-shrink: 0;
+}
+.portafolio-giQ .trabajos-f56 .trabajos-Gag .auto-group-qv1e-SWQ .trabajo-4-o64 .startup-5ZN {
+  margin-left: 0.1rem;
+  font-size: 1.6rem;
+  font-weight: 300;
+  line-height: 1.3625;
+  color: #3895ea;
+  font-family: Open Sans, 'Source Sans Pro';
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+.portafolio-giQ .trabajos-f56 .trabajos-Gag .auto-group-qv1e-SWQ .trabajo-4-o64 .boostrap-js-cJQ {
+  margin-left: 0.1rem;
+  font-size: 1.4rem;
+  font-weight: 300;
+  line-height: 1.3625;
+  color: #5a5a5a;
+  font-family: Open Sans, 'Source Sans Pro';
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+.portafolio-giQ .trabajos-f56 .trabajos-Gag .auto-group-qv1e-SWQ .trabajo-2-W8t {
+  width: 100%;
+  row-gap: 1rem;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  border-radius: 1.6rem;
+  flex-shrink: 0;
+}
+.portafolio-giQ .trabajos-f56 .trabajos-Gag .auto-group-qv1e-SWQ .trabajo-2-W8t .imagen-4AQ {
+  width: 23.5rem;
+  height: 23.5rem;
+  object-fit: cover;
+  vertical-align: top;
+  border-radius: 1.6rem;
+  flex-shrink: 0;
+}
+.portafolio-giQ .trabajos-f56 .trabajos-Gag .auto-group-qv1e-SWQ .trabajo-2-W8t .gimnasio-QVA {
+  margin-right: 0.1rem;
+  font-size: 1.6rem;
+  font-weight: 300;
+  line-height: 1.3625;
+  color: #3895ea;
+  font-family: Open Sans, 'Source Sans Pro';
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+.portafolio-giQ .trabajos-f56 .trabajos-Gag .auto-group-qv1e-SWQ .trabajo-2-W8t .flexbox-8g4 {
+  font-size: 1.4rem;
+  font-weight: 300;
+  line-height: 1.3625;
+  color: #5a5a5a;
+  font-family: Open Sans, 'Source Sans Pro';
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+.portafolio-giQ .trabajos-f56 .trabajos-Gag .auto-group-ghtq-fR6 {
+  margin-bottom: 0.0936rem;
+  width: 23.5rem;
+  height: 61.8064rem;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 0;
+}
+.portafolio-giQ .trabajos-f56 .trabajos-Gag .auto-group-ghtq-fR6 .trabajo-5-zTN {
+  margin-bottom: 2.6rem;
+  width: 100%;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  border-radius: 1.6rem;
+  flex-shrink: 0;
+}
+.portafolio-giQ .trabajos-f56 .trabajos-Gag .auto-group-ghtq-fR6 .trabajo-5-zTN .imagen-kBe {
+  margin-bottom: 0.9794rem;
+  width: 23.5rem;
+  height: 23.4206rem;
+  position: relative;
+  background-size: 355.936% 100%;
+  background-position: -36.3996rem 0;
+  background-image: url('../assets/imagen-BhE.png');
+  border-radius: 1.6rem;
+  flex-shrink: 0;
+}
+.portafolio-giQ .trabajos-f56 .trabajos-Gag .auto-group-ghtq-fR6 .trabajo-5-zTN .comedor-Ecc {
+  margin: 0rem 0.1rem 1rem 0rem;
+  font-size: 1.6rem;
+  font-weight: 300;
+  line-height: 1.3625;
+  color: #3895ea;
+  font-family: Open Sans, 'Source Sans Pro';
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+.portafolio-giQ .trabajos-f56 .trabajos-Gag .auto-group-ghtq-fR6 .trabajo-5-zTN .boostrap-y4Q {
+  margin-right: 0.1rem;
+  font-size: 1.4rem;
+  font-weight: 300;
+  line-height: 1.3625;
+  color: #5a5a5a;
+  font-family: Open Sans, 'Source Sans Pro';
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+.portafolio-giQ .trabajos-f56 .trabajos-Gag .auto-group-ghtq-fR6 .trabajo-8-TEU {
+  width: 100%;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  border-radius: 1.6rem;
+  flex-shrink: 0;
+}
+.portafolio-giQ .trabajos-f56 .trabajos-Gag .auto-group-ghtq-fR6 .trabajo-8-TEU .imagen-b5n {
+  margin-bottom: 0.9794rem;
+  width: 23.5rem;
+  height: 23.4206rem;
+  object-fit: cover;
+  vertical-align: top;
+  border-radius: 1.6rem;
+  flex-shrink: 0;
+}
+.portafolio-giQ .trabajos-f56 .trabajos-Gag .auto-group-ghtq-fR6 .trabajo-8-TEU .radio-tag {
+  margin: 0rem 0.4rem 1.006rem 0rem;
+  font-size: 1.6rem;
+  font-weight: 300;
+  line-height: 1.3625;
+  color: #3895ea;
+  font-family: Open Sans, 'Source Sans Pro';
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+.portafolio-giQ .trabajos-f56 .trabajos-Gag .auto-group-ghtq-fR6 .trabajo-8-TEU .html-css-js-oxY {
+  font-size: 1.4rem;
+  font-weight: 300;
+  line-height: 1.3625;
+  color: #5a5a5a;
+  font-family: Open Sans, 'Source Sans Pro';
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+.portafolio-giQ .contacto-6Ax {
+  margin: 0rem 39rem 4rem 39rem;
+  width: calc(100% - 78rem);
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 0;
+}
+.portafolio-giQ .contacto-6Ax .contacto-DmN {
+  margin: 0rem 0rem 3.25rem 0.1rem;
+  text-align: center;
+  font-size: 4rem;
+  font-weight: 300;
+  line-height: 1.3625;
+  color: #3895ea;
+  font-family: Open Sans, 'Source Sans Pro';
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+.portafolio-giQ .contacto-6Ax .auto-group-2xys-jji {
+  box-sizing: border-box;
+  padding: 0rem 4.25rem 0rem 6.65rem;
+  width: 100%;
+  height: 24.65rem;
+  flex-shrink: 0;
+}
+.portafolio-giQ .contacto-6Ax .auto-group-2xys-jji .numero-sL8 {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+.portafolio-giQ .contacto-6Ax .auto-group-2xys-jji .numero-sL8 .whatshapp--PJU {
+  margin-right: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2.4rem;
+  font-weight: 300;
+  line-height: 1.3625;
+  color: #000000;
+  font-family: Open Sans, 'Source Sans Pro';
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+.portafolio-giQ .contacto-6Ax .auto-group-2xys-jji .numero-sL8 .numero-Hue {
+  margin-right: 1.2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2.4rem;
+  font-weight: 300;
+  line-height: 1.3625;
+  color: #000000;
+  font-family: Open Sans, 'Source Sans Pro';
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+.portafolio-giQ .contacto-6Ax .auto-group-2xys-jji .numero-sL8 .solo-mensajes-DYQ {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2.4rem;
+  font-weight: 300;
+  line-height: 1.3625;
+  color: #000000;
+  font-family: Open Sans, 'Source Sans Pro';
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+.portafolio-giQ .pie-de-pagina-LN8 {
+  width: 100%;
+  height: 20rem;
+  background-color: #1e2b38;
+  flex-shrink: 0;
+}
+.pie-de-pagina-LN8 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2.4rem;
+  font-weight: 300;
+  line-height: 1.3625;
+  color: #fff;
+  font-family: Open Sans, 'Source Sans Pro';
+  white-space: nowrap;
+  flex-shrink: 0;
+}

@@ -1,0 +1,207 @@
+body {
+    font-family: 'Poppins', sans-serif; /* Cambia la tipografía a Poppins */
+    padding: 0;
+    margin: 0;
+}
+
+a { 
+    text-decoration: none; /* Elimina el subrayado */
+}
+
+/* Sección de descripción */
+.about-section {
+    text-align: center; /* Centra el texto */
+    padding: 120px 20px; /* Espaciado en la sección */
+    background-color: white; /* Color de fondo opcional */
+}
+
+/* Título de la sección */
+.about-title {
+    color: orange; /* Color naranja para el título */
+    font-size: 2.5rem; /* Tamaño de fuente */
+    margin-bottom: 20px; /* Espacio debajo del título */
+    font-weight: normal; /* Grosor del texto */
+}
+
+/* Texto de la sección */
+.about-text {
+    color: black; /* Color negro para el texto */
+    font-size: 1.5rem; /* Tamaño de fuente aumentado */
+    font-weight: bold;
+}
+
+/* Sección de contacto */
+.contact-section {
+    text-align: center; /* Centra el texto */
+    padding: 80px 20px; /* Espaciado en la sección */
+    background-color: white; /* Color de fondo blanco */
+}
+
+/* Título de la sección de contacto */
+.contact-title {
+    color: #0876f1; /* Color azul para el título */
+    font-size: 2.5rem; /* Tamaño de fuente */
+    margin-bottom: 20px; /* Espacio debajo del título */
+    font-weight: normal; /* Grosor del texto */
+}
+
+/* Texto de contacto */
+.contact-text {
+    color: black; /* Color negro para el texto */
+    font-size: 1.2rem; /* Tamaño de fuente */
+    margin: 10px 0; /* Espacio alrededor del texto */
+}
+
+/* Estilos para la portada */
+.hero-section {
+    position: relative;
+    height: 550px;
+    background-image: url('images/wallpaper.png');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+/* Cuadro alrededor del título y subtítulo */
+.hero-content {
+    border: 3px solid white; /* Borde blanco de 3px */
+    border-radius: 15px; /* Bordes redondeados */
+    padding: 20px 40px;
+}
+
+/* Título principal */
+.hero-content h1 {
+    font-size: 4rem;
+    font-weight: bold;
+    margin: 0;
+}
+
+/* Subtítulo */
+.hero-content p {
+    font-size: 1.5rem;
+    margin: 10px 0 0 0;
+}
+
+/* Contenedor de botones en la esquina superior derecha */
+.buttons-container {
+    position: absolute;
+    top: 60px;
+    right: 70px;
+}
+
+.buttons-container .btn {
+    padding: 10px;
+    border: none; /* Sin borde */
+    color: rgb(0, 0, 0); /* Texto negro */
+    text-transform: uppercase; /* Texto en mayúsculas */
+    font-size: 20px;
+    transition: background-color 0.3s ease; /* Transición suave para el hover */
+    text-decoration: none; /* Elimina el subrayado */
+}
+
+.buttons-container .btn:hover {
+    scale: 1.1;
+}
+
+.buttons-container .btn:focus {
+    outline: none; /* Elimina el borde de enfoque */
+    box-shadow: none; /* Sin sombra de foco */
+}
+
+/* Contenedor del ícono */
+.icon-container {
+    position: absolute;
+    bottom: -100px; 
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/* Estilo para el icono circular */
+.perfil-icon {
+    width: 200px; /* Ajusta el tamaño del icono */
+    height: 200px;
+    border-radius: 50%; /* Hace que el icono sea circular */
+    border: 7px solid gainsboro; /* Borde blanco de 3px */
+    object-fit: cover; /* Asegura que la imagen se ajuste bien dentro del círculo */
+}
+
+/* Texto destacado en azul */
+.highlight-blue {
+    color: #0876f1;
+}
+
+/* Sección de proyectos */
+.projects-section {
+    padding: 80px 20px; /* Espaciado en la sección */
+    background-color: #f0f0f0; /* Color de fondo gris claro */
+}
+
+/* Título de la sección de proyectos */
+.projects-title {
+    color: black; /* Color naranja para el título */
+    font-size: 2.5rem; /* Tamaño de fuente */
+    margin-bottom: 40px; /* Espacio debajo del título */
+    text-align: center; /* Centra el texto */
+    font-weight: normal;
+}
+
+/* Contenedor de los proyectos */
+.project-container {
+    display: flex; /* Usa flexbox para el diseño */
+    justify-content: center; /* Centra el contenido */
+    flex-wrap: wrap; /* Permite que las tarjetas se ajusten en varias líneas */
+}
+
+/* Estilo para las tarjetas de proyecto */
+.project-card {
+    width: 270px; /* Ancho fijo para las tarjetas */
+    height: 270px;
+    border: 1px solid #ddd; /* Borde gris claro */
+    border-radius: 10px; /* Bordes redondeados */
+    padding: 20px; /* Espaciado interno */
+    background-color: white; /* Fondo blanco para las tarjetas */
+    margin: 10px; /* Espacio entre las tarjetas */
+    text-align: center; /* Centra el texto dentro de la tarjeta */
+    transition: box-shadow 0.3s ease; /* Transición suave para el hover */
+}
+
+.project-card:hover {
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Sombra al pasar el ratón */
+}
+
+/* Imagen del proyecto */
+.project-image {
+    width: 100%; /* Ocupa todo el ancho del contenedor */
+    height: auto; /* Mantiene la relación de aspecto */
+    border-radius: 10px; /* Bordes redondeados */
+}
+
+/* Título del proyecto */
+.project-title {
+    color: #0876f1; /* Color azul */
+    font-size: 1.5rem; /* Tamaño de fuente */
+    margin: 15px 0 5px; /* Espacio alrededor del título */
+}
+
+/* Descripción del proyecto */
+.project-description {
+    color: gray; /* Color gris para la descripción */
+    font-size: 1rem; /* Tamaño de fuente */
+    margin: 0; /* Sin margen */
+}
+
+
+/* Estilos para el pie de página */
+.footer {
+    background-color: #333; /* Color de fondo del pie de página */
+    color: white; /* Color del texto */
+    text-align: center; /* Centra el texto */
+    padding: 20px 0; /* Espaciado interno */
+    position: relative; /* Para mantenerlo en su lugar */
+    bottom: 0; /* Alinear al fondo */
+    width: 100%; /* Ancho completo */
+}

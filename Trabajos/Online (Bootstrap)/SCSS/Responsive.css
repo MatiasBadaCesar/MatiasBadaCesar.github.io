@@ -1,0 +1,40 @@
+@media screen and (max-width: 992px) {
+  header .contenedor_logo_menu .logo {
+    margin-bottom: 20px;
+    text-align: center; }
+  header .contenedor_logo_menu .menu {
+    text-align: center; }
+    header .contenedor_logo_menu .menu a {
+      margin: 0 20px; }
+  header .textos {
+    margin: 50px 0;
+    font-size: 16px; }
+    header .textos .primera_linea {
+      font-size: 1.5em; }
+    header .textos .segunda_linea {
+      font-size: 1.3em; }
+    header .textos .contenedor-btns a {
+      margin-bottom: 10px; }
+
+  .main .fotos .foto .titulo {
+    margin-top: 0; }
+  .main .clientes .cliente {
+    margin-bottom: 40px; } }
+@media screen and (max-width: 762px) {
+  .main .caracteristicas .caracteristica {
+    margin-bottom: 40px; }
+  .main .fotos .foto {
+    text-align: center; }
+    .main .fotos .foto .texto * {
+      text-align: left; }
+    .main .fotos .foto .texto p {
+      margin-bottom: 10px; }
+  .main .precios .precio {
+    margin-bottom: 20px; }
+
+  footer .direccion {
+    text-align: center; }
+    footer .direccion .logo img {
+      margin-top: 20px; } }
+
+/*# sourceMappingURL=Responsive.css.map */

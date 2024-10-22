@@ -1,0 +1,210 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="../z_bootstrap/css/bootstrap.min.css">
+    <link rel="shorcut icon" type="image/x-icon" href="Imagenes/Icon.jpg">
+    <title>Comedor</title>
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container">
+                <a href="#" class="navbar-brand">Logotipo</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#contenidoMenu" aria-controls="contenidoMenu" arial-expanded="false" aria-label="Mostrar/Ocultar Navegacio">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="contenidoMenu">
+                    <ul class="navbar-nav me-auto">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">Inicio</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a href="#" class="nav-link dropdown-toggle" id="submenuProductos" role="button" data-bs-toggle="dropdown"aria-expanded="false"class="nav-link">
+                                Productos
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="submenuProductos">
+                                <li><a href="#" class="dropdown-item">Alimentos</a></li>
+                                <li><a href="#" class="dropdown-item">Anti-Parasitos</a></li>
+                                <li><a href="#" class="dropdown-item">Juguetes</a></li>
+                                <li><a href="#" class="dropdown-item">Accesorios</a></li>
+                                <li><a href="#" class="dropdown-item">Medicamentos</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">Contactos</a>
+                        </li>
+                    </ul>
+                    <form action="" class="d-flex">
+                        <input type="text" class="form-control me-2" aria-label="Buscar" placeholder="Buscar">
+                        <button class="btn btn-primary" type="submit">Buscar</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container">
+        <div class="row">
+            <div class="col">
+                <div class="carousel slide" id="slideshow" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="Imagenes/1.jpg" class="w-100" alt="">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="Imagenes/2.jpg" class="w-100" alt="">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="Imagenes/3.jpg" class="w-100" alt="">
+                        </div>
+                    </div>
+
+                    <button class="carousel-control-prev"type="button" data-bs-target="#slideshow"data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Anterior</span>
+                    </button>
+                    <button class="carousel-control-next"type="button" data-bs-target="#slideshow"data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Siguiente</span>
+                    </button>
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#slideshow" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide #1">
+                        </button>
+                        <button type="button" data-bs-target="#slideshow" data-bs-slide-to="1" class="active" aria-current="true" aria-label="Slide #2">
+                        </button>
+                        <button type="button" data-bs-target="#slideshow" data-bs-slide-to="2" class="active" aria-current="true" aria-label="Slide #3">
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row py-5">
+            <div class="col">
+                <div class="border-bottom">
+                    <h1 class="text-center">
+                        Galería
+                    </h1>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-12 col-sm-6 col-lg-3 mb-4">
+                <div class="card">
+                    <img class="card-img-top" src="Imagenes/Productos/1.jpg" alt="Comida" height="200">
+                    <div class="card-title">
+                        <h3 class="card-title">Alimento Mixto</h3>
+                        <p class="card-text">Croquetas ricas en proteinas</p>
+                        <a href="#" class="btn btn-sm btn-primary">Comprar</a>
+                        <a href="#" class="btn btn-sm btn-secondary">Detalles</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-6 col-lg-3 mb-4">
+                <div class="card">
+                    <img class="card-img-top" src="Imagenes/Productos/2.jpg" alt="Anti-Parasiti" height="200">
+                    <div class="card-title">
+                        <h3 class="card-title">Anti parasitarios</h3>
+                        <p class="card-text">Anti-Parasiti</p>
+                        <a href="#" class="btn btn-sm btn-primary">Comprar</a>
+                        <a href="#" class="btn btn-sm btn-secondary">Detalles</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-6 col-lg-3 mb-4">
+                <div class="card">
+                    <img class="card-img-top" src="Imagenes/Productos/3.png" alt="Comida" height="200">
+                    <div class="card-title">
+                        <h3 class="card-title">Comedero Mixto</h3>
+                        <p class="card-text">Para animales pequeños/medianos</p>
+                        <a href="#" class="btn btn-sm btn-primary">Comprar</a>
+                        <a href="#" class="btn btn-sm btn-secondary">Detalles</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-6 col-lg-3 mb-4">
+                <div class="card">
+                    <img class="card-img-top" src="Imagenes/Productos/4.jpg" alt="Anti-Parasiti" height="200">
+                    <div class="card-title">
+                        <h3 class="card-title">Comedor de Aves</h3>
+                        <p class="card-text">Estilo osito bebe</p>
+                        <a href="#" class="btn btn-sm btn-primary">Comprar</a>
+                        <a href="#" class="btn btn-sm btn-secondary">Detalles</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-6 col-lg-3 mb-4">
+                <div class="card">
+                    <img class="card-img-top" src="Imagenes/Productos/5.jpg" alt="Comida" height="200">
+                    <div class="card-title">
+                        <h3 class="card-title">Adorno para Colgar</h3>
+                        <p class="card-text">Modelo osito negro</p>
+                        <a href="#" class="btn btn-sm btn-primary">Comprar</a>
+                        <a href="#" class="btn btn-sm btn-secondary">Detalles</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-6 col-lg-3 mb-4">
+                <div class="card">
+                    <img class="card-img-top" src="Imagenes/Productos/6.jpg" alt="Anti-Parasiti" height="200">
+                    <div class="card-title">
+                        <h3 class="card-title">Libro de Guia Infantil</h3>
+                        <p class="card-text">Para educar desde temprana edad</p>
+                        <a href="#" class="btn btn-sm btn-primary">Comprar</a>
+                        <a href="#" class="btn btn-sm btn-secondary">Detalles</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-6 col-lg-3 mb-4">
+                <div class="card">
+                    <img class="card-img-top" src="Imagenes/Productos/7.png" alt="Comida" height="200">
+                    <div class="card-title">
+                        <h3 class="card-title">Carne Seca</h3>
+                        <p class="card-text">Paquete pequeño</p>
+                        <a href="#" class="btn btn-sm btn-primary">Comprar</a>
+                        <a href="#" class="btn btn-sm btn-secondary">Detalles</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-6 col-lg-3 mb-4">
+                <div class="card">
+                    <img class="card-img-top" src="Imagenes/Productos/8.jpg" alt="Anti-Parasiti" height="200">
+                    <div class="card-title">
+                        <h3 class="card-title">Almohadas Salvajes</h3>
+                        <p class="card-text">Con dibujo de animalitos</p>
+                        <a href="#" class="btn btn-sm btn-primary">Comprar</a>
+                        <a href="#" class="btn btn-sm btn-secondary">Detalles</a>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+
+    </main>
+        <nav class="navbar-dark bg-dark">
+            <div class="container">
+                <div class="row border-top py-5 justify-content-between">
+                    <div class="col-auto">
+                        <a href="#" class="btn btn-outline-success">Acerca de</a>
+                        <a href="#" class="btn btn-outline-secondary">Contacto</a>
+                    </div>
+                    <div class="col-auto">
+                        <h1 class="text-center navbar-brand">Copyrigh Comedor @ 2023</h1>
+                    </div>
+                    <div class="col-auto">
+                        <a href="#" class="btn btn-outline-success">Subir en Pagina</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </footer>
+
+    <script src="../z_bootstrap/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

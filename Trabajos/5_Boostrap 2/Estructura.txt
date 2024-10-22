@@ -1,2 +1,0 @@
-Bootstrap:
-Bootstrap es un popular framework de diseño web de código abierto creado por Twitter. Se utiliza para simplificar y acelerar el proceso de desarrollo de sitios web y aplicaciones web responsivas. Bootstrap se basa en HTML, CSS y JavaScript y proporciona una amplia variedad de componentes y estilos predefinidos que los desarrolladores pueden utilizar como base para crear diseños web atractivos y funcionales de manera más eficiente.

@@ -1,0 +1,114 @@
+/* Variables de animación */
+:root {
+  --anim_time_1: 10s; /* Tiempo de animación para modo 1 */
+  --anim_time_2: 16s; /* Tiempo de animación para modo 2 */
+}
+
+/* Contenedor de animación */
+.anim {
+  position: relative; /* Posicionamiento relativo para el contenedor */
+  overflow: hidden; /* Ocultar elementos fuera del contenedor */
+}
+
+/* Estilo de imagen en animación */
+.anim img {
+  width: 100%; /* Ancho completo */
+  height: 100px; /* Altura fija */
+  top: 0; /* Posición superior */
+}
+
+/* Olas grandes */
+.anim_white img,
+.anim_grey_1 img,
+.anim_grey_2 img {
+  position: absolute; /* Posición absoluta para las imágenes de las olas */
+}
+
+/* Olas pequeñas - anim_white */
+.anim_white .wawe_1 {
+  animation: anim_mode_1_1 var(--anim_time_1) linear infinite; 
+}
+.anim_white .wawe_2 {
+  animation: anim_mode_1_2 var(--anim_time_1) linear infinite; 
+}
+.anim_white .wawe_3 {
+  animation: anim_mode_1_3 var(--anim_time_1) linear infinite; 
+}
+
+/* Olas pequeñas - anim_grey_1 */
+.anim_grey_1 .wawe_1 {
+  animation: anim_mome_2_1 var(--anim_time_1) linear infinite; 
+}
+.anim_grey_1 .wawe_2 {
+  animation: anim_mome_2_2 var(--anim_time_1) linear infinite; 
+}
+.anim_grey_1 .wawe_3 {
+  animation: anim_mome_2_3 var(--anim_time_1) linear infinite; 
+}
+
+/* Olas pequeñas - anim_grey_2 */
+.anim_grey_2 .wawe_1 {
+  animation: anim_mode_1_1 var(--anim_time_2) linear infinite; 
+}
+.anim_grey_2 .wawe_2 {
+  animation: anim_mode_1_2 var(--anim_time_2) linear infinite; 
+}
+.anim_grey_2 .wawe_3 {
+  animation: anim_mode_1_3 var(--anim_time_2) linear infinite; 
+}
+
+/* Animaciones principales */
+@keyframes anim_mode_1_1 {
+  0% {
+      transform: translateX(-200%); /* Desplazar a la izquierda */
+  }
+  100% {
+      transform: translateX(0%); /* Volver a la posición original */
+  }
+}
+
+@keyframes anim_mode_1_2 {
+  0% {
+      transform: translateX(-100%); /* Desplazar a la izquierda */
+  }
+  100% {
+      transform: translateX(100%); /* Desplazar a la derecha */
+  }
+}
+
+@keyframes anim_mode_1_3 {
+  0% {
+      transform: translateX(0%); /* Posición original */
+  }
+  100% {
+      transform: translateX(200%); /* Desplazar a la derecha */
+  }
+}
+
+/* Animaciones secundarias */
+@keyframes anim_mome_2_1 {
+  0% {
+      transform: translateX(0%); /* Posición original */
+  }
+  100% {
+      transform: translateX(-200%); /* Desplazar a la izquierda */
+  }
+}
+
+@keyframes anim_mome_2_2 {
+  0% {
+      transform: translateX(100%); /* Desplazar a la derecha */
+  }
+  100% {
+      transform: translateX(-100%); /* Desplazar a la izquierda */
+  }
+}
+
+@keyframes anim_mome_2_3 {
+  0% {
+      transform: translateX(200%); /* Desplazar a la derecha */
+  }
+  100% {
+      transform: translateX(0%); /* Volver a la posición original */
+  }
+}

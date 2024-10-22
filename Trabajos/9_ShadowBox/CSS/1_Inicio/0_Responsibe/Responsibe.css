@@ -1,0 +1,143 @@
+/* Media Queries para Responsividad */
+@media (max-width: 768px) {
+    /* MAINMENU */
+    .main_menu {
+        padding: 8px 20px; /* Reduce el espaciado interno en pantallas más pequeñas */
+    }
+
+    .main_menu .buttons .btn {
+        width: 100%; /* Los botones ocupan el 100% del ancho del contenedor */
+        margin-bottom: 10px; /* Espacio inferior entre botones */
+        margin-right: 0; /* Elimina margen derecho para mantener el espaciado */
+        font-size: 16px; /* Reduce el tamaño del texto */
+    }
+
+    #user_name {
+        font-size: 16px; /* Tamaño del texto reducido para el nombre de usuario */
+    }
+
+    #user_image {
+        height: 50px; /* Reduce la altura de la imagen de perfil */
+    }    
+
+    /* IMAGES_BOX */
+    .gallery {
+        grid-template-columns: repeat(2, 1fr); /* Dos columnas en pantallas pequeñas */
+        height: 240px;
+    }
+
+    .result-item {
+        width: calc(50% - 10px); /* Dos columnas para resultados */
+    }
+
+    .title_container,
+    .gallery_container {
+        width: 90%; /* Ancho del contenedor más grande en móviles */
+    }
+
+    /* CARD */
+    #card {
+        margin: 200px;
+    }
+    
+    /* INTERFACE_BTN_CARD */
+    .button_buy {
+        width: 80%; /* Hace que el botón ocupe el 80% del ancho de su contenedor */
+        font-size: 24px; /* Reduce el tamaño del texto en pantallas más pequeñas */
+        padding: 5px; /* Aumenta el relleno interno en pantallas pequeñas */
+    }
+    
+    .card_interfaces {
+        padding: 8px 20px; /* Reduce el espaciado interno */
+    }
+
+    .card_interfaces .btn_card_interfaces .btn {
+        width: 80px; /* Ajusta el ancho del botón */
+        height: 40px; /* Ajusta la altura del botón */
+        font-size: 14px; /* Reduce el tamaño del texto */
+        margin-right: 5px; /* Reduce el margen derecho */
+    }
+
+    .texto-componente-carta {
+        font-size: 14px; /* Ajusta el tamaño del texto en pantallas pequeñas */
+    }
+   
+    /* INFO_BOX */
+    .info_box .section {
+        padding: 15px; /* Reducir espacio interno en pantallas pequeñas */
+        margin-bottom: 15px; /* Reducir margen inferior */
+    }
+
+    .info_box .titulo {
+        font-size: 14px; /* Reducir tamaño de fuente en pantallas pequeñas */
+    }
+
+    .info_box .imagen {
+        max-width: 100%; /* Ancho completo en pantallas pequeñas */
+    }
+
+}
+
+@media (max-width: 480px) {
+    /* MAINMENU */
+        .main_menu .buttons .btn {
+        font-size: 14px; /* Tamaño del texto aún más pequeño para pantallas muy pequeñas */
+    }
+
+    #user_name {
+        font-size: 14px; /* Tamaño del texto reducido */
+    }
+
+    #user_image {
+        height: 40px; /* Reduce aún más la altura de la imagen de perfil */
+    }
+
+    /* IMAGES_BOX */
+    .result-item {
+        width: 100%; /* Una columna en pantallas muy pequeñas */
+    }
+
+    .nav-link {
+        font-size: 16px; /* Tamaño de fuente más pequeño para móviles */
+    }
+    
+    /* CARD */
+    #card {
+        margin: 200px;
+    }
+    
+    /* INTERFACE_BTN_CARD */
+    .button_buy {
+        width: 90%; /* Hace que el botón ocupe el 90% del ancho de su contenedor */
+        font-size: 20px; /* Reduce aún más el tamaño del texto en pantallas muy pequeñas */
+        padding: 8px; /* Aumenta el relleno interno en pantallas muy pequeñas */
+    }
+    
+    .card_interfaces {
+        padding: 8px 10px; /* Ajusta el espaciado interno */
+    }
+
+    .card_interfaces .btn_card_interfaces .btn {
+        width: 70px; /* Ajusta el ancho del botón */
+        height: 35px; /* Ajusta la altura del botón */
+        font-size: 12px; /* Reduce el tamaño del texto */
+    }
+
+    .btn-icon {
+        width: 40px; /* Ajusta el tamaño de la imagen */
+        height: 40px; /* Ajusta el tamaño de la imagen */
+    }
+
+    .texto-componente-carta {
+        font-size: 12px; /* Ajusta el tamaño del texto en pantallas muy pequeñas */
+    }
+
+    /* INFO_BOX */
+    .info_box .section {
+        margin-bottom: 10px; /* Reducir margen en pantallas muy pequeñas */
+    }
+
+    .info_box .titulo {
+        font-size: 12px; /* Ajuste adicional del tamaño de fuente */
+    }
+}

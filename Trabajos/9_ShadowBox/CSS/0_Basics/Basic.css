@@ -1,0 +1,79 @@
+/* CUERPO Y FONDO */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    position: relative; /* Necesario para que los pseudoelementos se posicionen respecto al body */
+    background-color: #f8f9fa; /* Color de fondo de respaldo */
+}
+
+/* Imagen de fondo con efecto de desenfoque */
+body::before {
+    content: "";
+    position: fixed; /* Fija la imagen al fondo de la ventana */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -2; /* Envía el fondo detrás del contenido */
+    background-image: url('../../png_images/Wallpaper/Fondo.png'); /* Imagen de fondo */
+    background-size: cover; /* Cubre toda la pantalla */
+    background-position: center; /* Centra la imagen */
+    background-attachment: fixed; /* La imagen no se desplaza al hacer scroll */
+    filter: blur(5px); /* Aplica desenfoque para efecto visual */
+}
+
+/* Capa semitransparente sobre el fondo */
+body::after {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(179, 179, 179, 0.4); /* Capa transparente sobre el fondo */
+    z-index: -2; /* Envía la capa detrás del contenido */
+    filter: blur(5px); /* Refuerza el desenfoque */
+}
+
+/* CONTENEDORES */
+.container {
+    padding: 20px; /* Espaciado interno */
+    justify-content: center; /* Centra el contenido horizontalmente */
+    transition: width 1s, height 1s; /* Transiciones suaves de tamaño */
+}
+
+.row {
+    justify-content: center; /* Centra filas horizontalmente */
+}
+
+/* MENSAJES */
+.alert {
+    padding: 10px; /* Espaciado interno */
+    margin-bottom: 20px; /* Separación inferior */
+}
+
+/* SEPARADOR */
+.separator {
+    border-top: 5px solid #ccc; /* Línea gris y gruesa */
+    border-radius: 5px; /* Bordes suavizados */
+    margin: 10px 0; /* Espaciado superior e inferior */
+}
+
+/* BARRA DE DESPLAZAMIENTO (para navegadores WebKit) */
+::-webkit-scrollbar {
+    width: 10px; /* Ancho de la barra de desplazamiento */
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1; /* Color del riel de la barra de desplazamiento */
+}
+
+::-webkit-scrollbar-thumb {
+    background: #888; /* Color del pulgar */
+    border-radius: 5px; /* Pulgar con bordes redondeados */
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #555; /* Cambia de color al pasar el cursor */
+}

@@ -1,0 +1,62 @@
+/* Contenedor principal */
+.info_box {
+    background-color: #ffffff; /* Fondo blanco */
+}
+
+/* Sección */
+.info_box .section {
+    background-color: #ffffff; /* Fondo claro */
+    border: 2px solid #ccc; /* Borde gris */
+    border-radius: 10px; /* Bordes redondeados */
+    padding: 20px; /* Espacio interno */
+    margin-bottom: 20px; /* Separación entre secciones */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    transition: background-color 0.3s, border-color 0.3s, color 0.3s, width 0.3s ease, height 0.3s ease; /* Transiciones suaves */
+}
+
+/* Título */
+.info_box .section .titulo {
+    display: inline-block; /* Adaptar al contenido */
+    border: 1px solid #ccc; /* Borde gris */
+    background-image: url('../../../png_images/png_personal/BlancoTenue.png'); 
+    background-size: cover; /* Cubrir todo el contenedor */
+    border-radius: 0 0 10px 10px; /* Bordes inferiores curvados */
+    font-size: 16px; /* Tamaño del texto */
+    font-weight: bold; /* Texto en negrita */
+    position: relative; /* Posición relativa para ajustes */
+    top: -21px; /* Ajuste vertical */
+    margin: 0 -16px; /* Margen lateral */
+    padding: 3px; /* Espacio interno */
+}
+
+/* Título descriptivo */
+.info_box .titulo-descriptivo {
+    font-weight: bold; /* Texto en negrita */
+}
+
+/* Estilos para texto en secciones */
+.info_box .section p,
+.info_box .section h4 {
+    color: #333; /* Color de texto oscuro */
+    font-family: 'Helvetica Neue', sans-serif; /* Fuente similar a la de Apple */
+}
+
+/* Efecto hover en sección */
+.info_box .section:hover {
+    scale: 1.02; /* Aumentar tamaño al pasar el mouse */
+}
+
+/* Imagen */
+.info_box .imagen {
+    width: 100%; /* Adaptar ancho al contenedor */
+    max-width: 300px; /* Ancho máximo */
+    height: auto; /* Mantener proporción */
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 5px 9px rgba(0, 0, 0, 0.7); /* Sombra */
+    transition: transform 0.3s ease; /* Transición suave */
+}
+
+/* Aumentar tamaño de imagen al pasar el mouse */
+.info_box .imagen:hover {
+    transform: scale(1.05); /* Efecto zoom */
+}

@@ -1,0 +1,60 @@
+/* Estilos para el contenedor de la etapa 3 */
+.etapa3 {
+    height: 800px;
+    background-color: #f4f4f4; /* Color de fondo blanco tenue */
+    padding: 20px;
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+/* Estilos para el título */
+.etapa3 h2 {
+    color: #333; /* Color de texto */
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+/* Estilos para el texto descriptivo */
+.etapa3 p {
+    color: #666; /* Color de texto gris */
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+/* Estilos para los precios */
+.Precios {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.titulo-total {
+    color: #333; /* Color de texto */
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+.precio2 {
+    font-weight: bold;
+}
+
+/* Estilos para el formulario de comprobante de pago */
+.comprobante-pago {
+    text-align: center;
+}
+
+/* Estilos para el botón de enviar orden */
+.EnviarOrden {
+    background-image: url('../../png_images/png_personal/BlancoTenue.png'); /* Ruta de la imagen de fondo */
+    background-color: #f2f2f2; /* Color de fondo azul */
+    border-color: #2e2e2e; /* Color del borde azul */
+    color: rgb(22, 22, 22)000; /* Color de texto blanco */
+    font-size: 18px;
+    padding: 10px 20px;
+    border-radius: 5px; /* Bordes redondeados */
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.EnviarOrden:hover {
+    background-color: #00e047; /* Color de fondo azul más oscuro al pasar el ratón */
+}

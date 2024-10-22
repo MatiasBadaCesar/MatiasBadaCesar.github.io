@@ -1,0 +1,130 @@
+.scrollable-container {
+    max-height: 500px; /* Establece la altura máxima del contenedor */
+    overflow-y: auto; /* Agrega una barra de desplazamiento vertical cuando el contenido excede la altura máxima */
+}
+
+/* Estilos para el contenedor del menú de perfil */
+.perfil-menu {
+    margin: 0;
+    padding: 0px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+}
+
+/* Estilos para el contenedor principal */
+.menu .container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+.container {
+    margin: 0 auto;
+    padding: 20px;
+}
+
+
+/* Estilos para el título */
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Estilos para el contenedor del perfil */
+.perfil {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Estilos para el botón de cambiar imagen */
+#btnUsuario {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    margin-bottom: 20px;
+}
+
+/* Estilos para la imagen de usuario */
+#imagenUsuario {
+    height: 140px;
+    border-radius: 50%;
+    border: 4px solid #000000;
+}
+
+/* Estilos para la información del usuario */
+.informacion {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Estilos para los elementos de información */
+h2, h3 {
+    margin: 5px 0;
+}
+
+/* Estilo de fondo para el botón "Cerrar Sesión" */
+#cerrar-sesion-btn,
+#editar-btn{
+    background-image: url('../../png_images/png_personal/BlancoTenue.png'); /* Ruta de la imagen de fondo */
+    color: rgb(0, 0, 0);
+    border: none;
+    border-radius: 10px;
+    padding: 10px 20px;
+    font-size: 24px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+.Guardar{
+    background-image: url('../../png_images/png_personal/BlancoTenue.png'); /* Ruta de la imagen de fondo */
+    color: rgb(0, 0, 0);
+    border: none;
+    border-radius: 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* Estilos para el botón de cerrar sesión al pasar el mouse sobre él */
+#cerrar-sesion-btn:hover,
+#editar-btn:hover,
+.Guardar:hover {
+    background-color: #0056b3;
+}
+
+.EliminarCuenta{
+    color: rgb(236, 0, 0);
+    border: none;
+    border-radius: 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+.EliminarCuenta:hover {
+    background-color: #b00000;
+}
+
+/* Botones Flechas*/
+.icon-button {
+    background-color: transparent; /* Fondo transparente */
+    border: none; /* Sin borde */
+    cursor: pointer; /* Cambiar cursor al pasar sobre el botón */
+    padding: 10px; /* Espaciado interno */
+    margin: 10px; /* Espaciado externo */
+    border-radius: 50%; /* Bordes redondeados */
+    transition: transform 0.2s; /* Transición suave para el efecto hover */
+}
+
+.icon-button img {
+    width: 40px; /* Ancho del icono */
+    height: 40px; /* Altura del icono */
+}
+
+.icon-button:hover {
+    transform: scale(1.1); /* Aumentar el tamaño al pasar el mouse */
+}
+.estado-pedido {
+    font-weight: bold;
+}

@@ -1,0 +1,143 @@
+/* TITULOS */
+#text_aspect,
+#text_invoker {
+    position: absolute;
+    display: block;
+    transform-style: preserve-3d; 
+    transform: perspective(1000px) rotateZ(7deg) rotateY(calc(var(--style3D))) rotateX(352deg) translateX(-50%);
+    color: white;
+    z-index: 7;
+}
+
+#text_aspect {
+    font-size: 20px;
+    left: calc(var(--position-other-x) + 100px);
+    top: calc(var(--position-other-y) - 32px);
+}
+
+#text_invoker {
+    font-size: 14px;
+    left: calc(var(--position-other-x) + 100px);
+    top: calc(var(--position-other-y) + 45px);
+}
+
+/* VARIABLES */
+:root {
+    --position-x: 200px;
+    --position-y: 40px;
+    --position-other-x: calc(var(--position-x) + 20px);
+    --position-other-y: calc(var(--position-y) + 415px);   
+    --style3D: -25deg;
+}
+
+/* GENERAL */
+.card_component {
+    padding: 0;
+}
+
+#card {
+    position: relative;
+}
+
+#card img {
+    position: absolute;
+    display: block;
+    transform-style: preserve-3d; /* Permite transformaciones 3D */
+    transition: width 1s, height 1s, background-color 1s; /* Transiciones de 1 segundo para width, height y background-color */
+}
+
+/* DETALLES */
+#card_detail {
+    width: 368px;
+    height: 601px;
+    left: calc(var(--position-other-x) - 75px);
+    top: calc(var(--position-other-y) - 470px);
+    transform: perspective(1000px) rotateY(0deg);
+    z-index: 4;
+}
+
+/* SKIN */
+#card_skin {
+    transform: perspective(1000px) rotateY(var(--style3D)); /* Perspectiva y rotación en el eje Y */
+    box-shadow: 0 0 20px 5px rgba(0, 0, 0, 1); /* Sombra Bordes */
+    width: 270px; /* Ancho */
+    height: 480px; /* Alto */
+    left: var(--position-x);
+    top: var(--position-y);
+    z-index: 1;
+}
+
+#shadow::before {
+    content: '';
+    position: absolute;
+    display: block;
+    transform: perspective(1000px) rotateY(var(--style3D));
+    background: linear-gradient(0deg, rgba(0, 0, 0, 1) 0%, rgb(0 0 0 / 98%) 18%, rgb(0 0 0 / 85%) 28%, rgba(94, 0, 106, 0) 37%, rgba(255, 255, 255, 0) 100%);
+    width: 270px;
+    height: 480px;
+    left: calc(var(--position-x));
+    top: calc(var(--position-y));
+    z-index: 2;
+}
+
+/* MARCO */
+#card_box {
+    width: 370px; 
+    height: 580px; 
+    left: calc(var(--position-x) - 50px);
+    top: calc(var(--position-y) - 50px);
+    z-index: 2;
+}
+
+/* BORDE */
+#card_bank {
+    width: 405px;
+    height: 580px;
+    left: calc(var(--position-x) - 72px);
+    top: calc(var(--position-y) - 40px);
+    transform: perspective(1000px) rotateY(calc(var(--style3D) - 0deg));
+    z-index: 3;
+}
+
+/* ICONO */
+#card_icon {
+    width: 52px;
+    left: calc(var(--position-other-x) + 80px);
+    top: calc(var(--position-other-y) - 6px);
+    border-radius: 50%; 
+    z-index: 5;
+}
+
+/* OTROS */
+.card_other {
+    transform: rotateZ(5deg) rotateY(322deg) rotateX(352deg);
+    width: 33px;
+    height: 26px;
+    z-index: 6;
+}
+
+.card_spell{
+    box-shadow: inset 0px 0px 4px 2px rgb(0 0 0 / 48%);
+}
+
+#card_other_1 {
+    width: 38px;
+    height: 31px;
+    left: calc(var(--position-other-x) - 4px);
+    top: calc(var(--position-other-y) - 4px);
+}
+
+#card_other_2 {
+    left: calc(var(--position-other-x) + 20px);
+    top: calc(var(--position-other-y) + 4px);
+}
+
+#card_other_3 {
+    left: calc(var(--position-other-x) + 160px);
+    top: calc(var(--position-other-y) + 12px);
+}
+
+#card_other_4 {
+    left: calc(var(--position-other-x) + 197px);
+    top: calc(var(--position-other-y) + 16px);
+}

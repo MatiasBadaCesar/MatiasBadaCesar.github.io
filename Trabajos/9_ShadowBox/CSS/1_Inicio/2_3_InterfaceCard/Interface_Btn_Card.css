@@ -1,0 +1,104 @@
+/* GENERAL */
+/* Estilo del cuadro que contiene btn_card_interfaces */
+.card_interfaces {
+    padding: 8px 40px; /* Espaciado interno del contenedor */
+    background-color: #f4f4f4; /* Color de fondo del contenedor */
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1); /* Sombra para el efecto de elevación */
+    border-radius: 20px; /* Esquinas redondeadas del contenedor */
+    opacity: 1; /* Opacidad del contenedor */
+}
+
+/* Estilo de los btn_card_interfaces */
+.card_interfaces .btn_card_interfaces .btn {
+    width: 100px; /* Ancho del botón */
+    height: 50px; /* Altura del botón */
+    border-radius: 20px; /* Esquinas redondeadas */
+    border: 2px solid #cccccc; /* Borde sólido */
+    background-color: #f4f4f4; /* Color de fondo */
+    color: #333333; /* Color del texto */
+    font-size: 16px; /* Tamaño del texto */
+    padding: 10px 20px; /* Relleno interior */
+    margin-right: 10px; /* Margen derecho entre btn_card_interfaces */
+    transition: background-color 0.3s, border-color 0.3s, color 0.3s, width 0.3s ease, height 0.3s ease; /* Transición suave */
+    display: flex; /* Hace que los elementos dentro del botón se alineen horizontalmente */
+    align-items: center; /* Centra verticalmente los elementos dentro del botón */
+    justify-content: center; /* Centra horizontalmente los elementos dentro del botón */
+    position: relative; /* Establece una posición relativa para los elementos secundarios */
+    overflow: hidden; /* Oculta el desbordamiento de los elementos secundarios */
+    box-sizing: border-box; /* Incluye el borde en el tamaño total del botón */
+}
+
+/* INDIVIDUAL */
+/* REGRESAR */
+.btn_return {    
+    padding: 0; /* Eliminar cualquier relleno interno */
+    margin: 0; /* Eliminar cualquier margen */
+    background-color: transparent; /* Establecer el fondo transparente */
+    outline: none; /* Eliminar el contorno */
+    cursor: pointer; /* Cambiar el cursor al pasar sobre el botón */
+    border: none; /* Eliminar cualquier borde */
+    width: 50px; /* Ancho de la imagen */
+    height: 50px; /* Altura de la imagen */
+    filter: invert(100%); /* Invertir el color de la imagen */
+}
+
+/* Efecto hover para los botones de regresar */
+#btnSkinReturn:hover,
+#btnIconoReturn:hover {
+    transform: scale(1.1); /* Aumenta el tamaño al pasar el cursor */
+}
+
+/* Imagen dentro del botón */
+.card_interfaces .btn_card_interfaces .btn .btn-icon {
+    width: 50px; /* Ancho de la imagen */
+    height: 50px; /* Altura de la imagen */
+    margin-bottom: 5px; /* Espaciado inferior entre la imagen y el texto */
+    color: black; /* Color de fondo */
+    filter: invert(100%); /* Invertir el color de la imagen */
+    display: block; /* Cambiar a bloque para que el texto aparezca debajo */
+    margin: 0 auto; /* Centrar la imagen horizontalmente */
+}
+
+/* Título dentro del botón */
+.texto-componente-carta {
+    display: none; /* Oculta el título por defecto */
+    text-align: center; /* Alinea el texto al centro */
+    font-size: 16px; /* Tamaño del texto */
+    font-family: Arial, sans-serif; /* Cambia el tipo de fuente */
+}
+
+/* Estilo al pasar el mouse sobre el botón */
+.card_interfaces .btn_card_interfaces .btn:hover {
+    background-color: #e0e0e0; /* Cambio de color de fondo */
+    border-color: #999999; /* Cambio de color de borde */
+    color: #222222; /* Cambio de color del texto */
+}
+
+/* Estilo al pasar el mouse sobre el botón para el título */
+.card_interfaces .btn_card_interfaces .btn:hover span {
+    display: block; /* Muestra el título al pasar el mouse sobre el botón */
+    opacity: 1; /* Muestra el título al pasar el mouse sobre el botón */
+    bottom: 0; /* Muestra el título al pasar el mouse sobre el botón */
+}
+
+/* COMPRAR */
+.button_buy {
+    width: 500px; /* Ancho del botón */
+    display: inline-block; /* Hace que el cuadro se adapte al tamaño del contenido */
+    border: 2px solid #000000; /* Borde sólido negro */
+    background-image: url('../../../png_images/png_personal/BlancoTenue.png'); /* Imagen de fondo */
+    background-size: cover; /* La imagen se estira para cubrir todo el contenedor */
+    border-radius: 10px; /* Esquinas redondeadas en la parte superior y circular en la parte inferior */
+    font-size: 29px; /* Tamaño del texto del título */
+    font-weight: bold; /* Texto en negrita */
+    position: relative; /* Establece la posición relativa */
+    top: -21px; /* Ajusta la posición vertical hacia arriba */
+    margin: 0 -16px; /* Ajusta el margen horizontal */
+    padding: 3px; /* Espacio interno alrededor del contenido */
+    transition: transform 0.3s ease; /* Transición suave para el efecto hover */
+}
+
+/* Efecto hover para el botón de compra */
+.button_buy:hover {
+    transform: scale(1.1); /* Aumenta el tamaño del botón al pasar el cursor */
+}

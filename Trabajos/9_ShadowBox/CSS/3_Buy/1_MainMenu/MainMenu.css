@@ -1,0 +1,11 @@
+/* Estilos de la imagen de perfil */
+#user_image{
+    margin: 0px; /* Ajuste de margen */
+    height: 60px; /* Altura de la imagen */
+    border-radius: 50%; /* Imagen redondeada */
+    border: 2px solid #000000; /* Borde negro */
+} 
+
+#user_name{
+    margin:  20px -20px; /* Ajuste de margen */
+}

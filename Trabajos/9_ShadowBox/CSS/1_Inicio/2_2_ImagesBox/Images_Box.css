@@ -1,0 +1,353 @@
+/*GENERAL*/
+/* Estilos generales para formularios y contenedores */
+.form-control {
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 8px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+.title_container,
+.gallery_container {
+    width: 500px;
+}
+.title_container {
+    border-radius: 10px; /* Redondea los bordes del contenedor */
+    background-color: rgba(228, 228, 228, 0.9); /* Color blanco tenue con opacidad */
+    padding: 10px; /* Ajusta el relleno según sea necesario */
+    margin: 20px;
+}
+.gallery_container {
+    border-radius: 10px; /* Redondea los bordes del contenedor */
+    background-color: rgba(228, 228, 228, 0.9); /* Color blanco tenue con opacidad */
+    height: 450px;
+    padding: 20px; /* Ajusta el relleno según sea necesario */
+    margin: 20px;
+    position: relative; /* Posición relativa para manejar elementos internos */
+    z-index: 0; /* Define el orden en el eje z */
+}
+
+/* BARRA BUSQUEDA */
+/* Estilo para la barra de búsqueda */
+.search {
+    margin-bottom: 10px;
+}
+
+/* GALERIAS */
+/* Galería principal que utiliza grid para organizar las imágenes */
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* Define cuatro columnas */
+    height: 300px;
+    gap: 2px; /* Espacio entre filas y columnas */
+    overflow-x: auto;
+    overflow-y: auto; 
+    white-space: nowrap;
+}
+
+/* Estilos para barra de desplazamiento personalizada */
+.gallery::-webkit-scrollbar {
+    width: 10px; 
+}
+
+.gallery::-webkit-scrollbar-thumb {
+    background-color: #888; /* Color de la barra de desplazamiento */
+    border-radius: 5px;
+}
+
+.gallery::-webkit-scrollbar-track {
+    background-color: #eee; /* Color del track de la barra */
+}
+
+/* Diferente altura mínima para galerías específicas */
+#gallery_1 {
+    grid-auto-rows: minmax(110px, auto); /* Ajusta altura de filas */
+}
+
+#gallery_2 {
+    grid-auto-rows: minmax(190px, auto); /* Ajusta altura de filas */
+}
+
+/* IMAGENES INDIVIDUALES */
+/* Estilos para las imágenes de skins */
+.prefab_skin {
+    width: 100px;
+    height: 100px;
+    margin: 5px;
+    object-fit: cover; /* Ajusta la imagen al tamaño */
+    cursor: pointer;
+    border-radius: 10px; /* Redondea los bordes */
+    transition: transform 0.3s ease;
+    border: 5px solid white; /* Borde blanco */
+}
+.prefab_skin:hover {
+    transform: scale(1.1); /* Aumenta el tamaño al pasar el cursor */
+}
+
+/* Estilos para los campeones con transformación 3D */
+.prefab_champeon {
+    width: 90px;
+    height: 170px;
+    margin: 5px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: transform 0.5s ease; /* Transición suave para el giro */
+    transform-style: preserve-3d; /* Mantener estructura 3D */
+    backface-visibility: visible; /* Visibilidad del reverso */
+}
+
+/* Contenedor del campeón que agrega la perspectiva 3D */
+.prefab_champeon_container {
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+    perspective: 1000px; /* Perspectiva para el efecto 3D */
+}
+
+/* Fondo del campeón */
+.prefab_champeon_background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100px;
+    height: 180px;
+    cursor: pointer;
+    border-radius: 5px;
+    background: white; /* Fondo blanco */
+    z-index: -1; /* Coloca el fondo detrás */
+    transition: transform 0.5s ease;
+}
+
+/* Superposición transparente para efectos adicionales */
+.prefab_champeon_overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100px;
+    height: 180px;
+    cursor: pointer;
+    opacity: 0;
+    transition: transform 0.5s ease;
+}
+
+/* Animación de giro para los campeones */
+@keyframes spin_champeon {
+    0% {
+        transform: scale(1.05) rotateY(0deg);
+    }
+    50% {
+        transform: scale(1.05) rotateY(180deg);
+    }
+    100% {
+        transform: scale(1.05) rotateY(0deg);
+    }
+}
+
+/* Efecto de giro en el fondo y la imagen del campeón */
+.prefab_champeon_container:hover .prefab_champeon_background {
+    transform: scale(1.05); /* Escalar fondo */
+}
+
+.prefab_champeon_container:hover .prefab_champeon {
+    animation: spin_champeon 2.5s infinite; /* Iniciar animación al pasar el cursor */
+}
+
+/* MARCOS */
+/* Contenedor para elegir un marco */
+#choose_box {
+    text-align: center;
+}
+
+/* Botones de navegación dentro del marco */
+.btn_next-prev_box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+}
+
+/* Contenedor de la galería de marcos */
+#gallery_box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 350px;
+}
+
+/* Estilo individual para los marcos */
+.prefab_box {
+    width: 220px;
+    height: 320px;
+    margin: 5px;
+    cursor: pointer;
+    border-radius: 10px; /* Redondea los bordes */
+    transition: transform 0.3s ease; /* Suaviza la animación */
+}
+.prefab_box:hover {
+    transform: scale(1.1); /* Aumenta el tamaño al pasar el cursor */
+}
+
+/* Botones de imagen anteriores y de alternar imágenes */
+#prevImageBtn, #toggleImageBtn {
+    padding: 0;
+    margin: 0;
+    background-color: transparent;
+    outline: none;
+    cursor: pointer;
+    border: none;
+}
+
+/* Estilos para las imágenes de los botones */
+.button-marco {
+    width: 50px;
+    height: 50px;
+    filter: invert(100%); /* Invierte los colores de la imagen */
+}
+.button-marco:hover {
+    transform: scale(1.1); /* Efecto hover para agrandar */
+}
+
+/* Fondo para el marco */
+.prefab_box_background {
+    position: absolute;
+    left: 140px;
+    top: 100px;
+    width: 220px;
+    height: 320px;
+    cursor: pointer;
+    border-radius: 5px;
+    border: 5px solid white; /* Borde blanco */
+    background: white;
+    z-index: -1;
+    transition: transform 0.5s ease; /* Transición de fondo */
+}
+.prefab_box_overlay {
+    position: absolute;
+    left: 120px;
+    top: 90px;
+    width: 250px;
+    height: 340px;
+    cursor: pointer;
+    opacity: 0;
+    transition: transform 0.5s ease;
+}
+
+/* Animación de giro para los marcos */
+@keyframes spin_box {
+    0% {
+        transform: scale(1.1) rotateY(0deg);
+    }
+    50% {
+        transform: scale(1.1) rotateY(180deg);
+    }
+    100% {
+        transform: scale(1.1) rotateY(0deg);
+    }
+}
+
+/* Efecto hover en el contenedor del marco */
+.prefab_box_container:hover .prefab_box_background {
+    transform: scale(1.1);
+}
+
+.prefab_box_container:hover .prefab_box {
+    animation: spin_box 2.5s infinite; /* Iniciar animación al pasar el cursor */
+}
+
+
+/* ICONOS */
+/* Contenedor de la galería de iconos */
+#gallery_icon {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Estilo para los botones de los iconos */
+.btn_icon_img {
+    width: 200px;
+    height: 60px;
+    border-radius: 50px; /* Redondea los bordes */
+    border: 2px solid #cccccc;
+    background-color: #f4f4f4;
+    color: #333333;
+    font-size: 16px;
+    padding: 10px;
+    margin: 2px;
+    margin-right: 10px;
+    transition: background-color 0.3s, border-color 0.3s, color 0.3s, width 0.3s ease, height 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    position: relative;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+/* Estilo para la imagen dentro del botón */
+.button-icon img{
+    width: 50px; /* Ancho de la imagen */
+    height: 50px; /* Altura de la imagen */
+    border-radius: 50%; /* Borde redondeado */
+    margin-right: 10px; /* Espacio entre la imagen y el texto */
+}
+.btnIcono:hover {
+    transform: scale(1.1);
+}
+/* Título dentro del botón */
+.btn-title-icon {
+    font-size: 16px; /* Tamaño del texto */
+    font-family: Arial, sans-serif; /* Cambia el tipo de fuente */
+}
+
+/*OTROS*/
+#gallery_other {
+    margin: -20px 0px;
+    padding: 16px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.gallery_other_style{
+    overflow-x: auto; 
+    overflow-y: auto; 
+    white-space: nowrap;
+    height: 80px;
+    overflow-x: auto; 
+    overflow-y: hidden;
+    border-radius: 10px; /* Redondea los bordes */
+    margin: 0px;
+}
+.prefabt_other_1,
+.prefabt_other_2,
+.prefabt_other_3,
+.prefabt_other_4 {
+    width: 50px;
+    height: 50px;
+    margin: 5px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: transform 0.3s ease;
+    border: 5px solid white; /* Borde blanco */
+    border-radius: 10px; /* Redondea los bordes */
+}
+.prefabt_other_1:hover,
+.prefabt_other_2:hover,
+.prefabt_other_3:hover,
+.prefabt_other_4:hover{
+    transform: scale(1.1);
+}
+.gallery_other_style::-webkit-scrollbar {
+    height: 15px;
+}
+.gallery_other_style::-webkit-scrollbar-thumb {
+    background-color: #ffffff; /* Color del thumb (la parte desplazable) */
+    border-radius: 5px; /* Borde redondeado */
+}
+.gallery_other_style::-webkit-scrollbar-track {
+    background-color: #a8a8a8; /* Color del track (fondo de la barra) */
+    border-radius: 5px; /* Borde redondeado */
+}

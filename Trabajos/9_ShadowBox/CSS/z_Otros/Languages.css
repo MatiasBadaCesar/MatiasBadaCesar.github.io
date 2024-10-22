@@ -1,0 +1,53 @@
+/* Icono Padre */
+.icon_language {
+    margin: 0;
+}
+.icon_language img{
+    padding: 0;
+    cursor: pointer;
+    display: inline-block;
+    width: 50px; /* Ajustar el tamaño según sea necesario */
+    height: 50px;
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    background-position: center; /* Centra la imagen en el botón */
+    border-radius: 50%; /* Mantiene la forma circular */
+    border: 2px solid rgb(99, 99, 99); /* Borde opcional */
+    background-image: url('../../png_images/png_personal/Banderas/lenguajes.png');
+    background-size: cover;
+}
+
+/* Banderas/Iconos Hijo */
+.btn_language {
+    padding: 0;
+    cursor: pointer;
+    display: inline-block;
+    width: 40px; /* Ajustar el tamaño según sea necesario */
+    height: 40px;
+    background-size: contain; /* Ajusta la imagen para que quepa en el botón */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    background-position: center; /* Centra la imagen en el botón */
+    border-radius: 50%; /* Mantiene la forma circular */
+    border: 2px solid rgb(99, 99, 99); /* Borde opcional */
+}
+
+/*Iconos Hijo Imagenes */
+.btn_language img {
+    width: 30px;
+    height: 30px; 
+}
+
+/* Iconos Hijo Imagenes (usamos background-image para las banderas) */
+#btn_choose_es {
+    background-image: url('../../png_images/png_personal/Banderas/bandera_espanol.png');
+    background-size: cover;
+}
+
+#btn_choose_en {
+    background-image: url('../../png_images/png_personal/Banderas/bandera_inglaterra.png');
+    background-size: cover;
+}
+
+#btn_choose_fr {
+    background-image: url('../../png_images/png_personal/Banderas/bandera_francia.png');
+    background-size: cover;
+}

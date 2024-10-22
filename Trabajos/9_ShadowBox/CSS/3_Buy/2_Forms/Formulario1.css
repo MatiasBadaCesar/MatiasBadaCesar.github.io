@@ -1,0 +1,64 @@
+/* styles.css */
+
+/* Estilos para el contenedor de opciones finales */
+.etapa1 {
+    background-color: #f4f4f4; /* Color de fondo blanco tenue */
+    padding: 20px;
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+/* Estilos para el título */
+.etapa1 h1 {
+    color: #333; /* Color de texto */
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+/* Estilos para los botones de tamaño y relieve */
+.btn-primary {
+    background-color: #f6f6f6; /* Color de fondo azul */
+    border-color: #3e3e3e; /* Color del borde azul */
+    color: #212121; /* Color de texto blanco */
+    margin-bottom: 10px;
+    padding: 6px;
+    width: 100%;
+    border-radius: 5px;
+}
+.btn-primary:hover {
+    background-color: #d4d4d4; /* Color de fondo azul */
+}
+
+.carta_tamaño,
+.carta_relieve{
+    background-color: #a8a8a8; /* Color de fondo azul */
+    border-radius: 5px;
+    
+    box-shadow: 0 8px 8px rgba(0, 0, 0, 0.3); /* Sombra suave */
+}
+
+/* Estilos para las imágenes */
+.imagen1, 
+.imagen2{
+    max-width: 100%;
+    height: auto;
+    margin-top: 10px;
+}
+
+/* Estilos para los precios */
+.Precios {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.titulo-total {
+    color: #333; /* Color de texto */
+    font-size: 24px;
+    margin-bottom: 5px;
+}
+
+.precio {
+    color: #030303; /* Color de texto azul */
+    font-size: 28px;
+    font-weight: bold;
+}

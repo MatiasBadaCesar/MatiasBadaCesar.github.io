@@ -1,0 +1,147 @@
+/*Variables*/
+:root{
+    --skale-x: 270px;
+    --skale-y: 480px;
+    --skate-icon-x: 52px;
+    --skate-icon-y: 52px;
+    --skate-other-x: calc(var(--skale-x) - 237px);
+    --skate-other-y: 26px;
+    --position-x: 260px;
+    --position-y: 80px;
+    
+    --position-other-x:calc(var(--position-x) + 20px);
+    --position-other-y:calc(var(--position-y) + 415px);   
+    --position-runa-x: var(--position-other-x);
+    --position-runa-y: var(--position-other-y);
+    --position-hechizo-x: calc(var(--position-other-x) + 193px);
+    --position-hechizo-y: calc(var(--position-other-y) + 10px);
+    --style3D:-25deg;
+}
+
+/*GENERAL*/
+.carta img,
+.carta-componente-1::before{
+    position: absolute;
+    display: block;
+    left: var(--position-x);
+    top: var(--position-y);
+    transform-style: preserve-3d; /* Permite transformaciones 3D */
+    transform: perspective(1000px) rotateY(var(--style3D)); /* Perspectiva y rotación en el eje Y */
+    transition: width 1s, height 1s, background-color 1s; /* Transiciones de 1 segundo para width, height y background-color */
+}
+/*DETALLES*/
+.carta-componente-0 img{
+    width: calc(var(--skate-other-x) + 335px);
+    height: calc(var(--skate-other-y) + 575px);
+    left: calc(var(--position-other-x) - 75px);
+    top: calc(var(--position-other-y) - 470px);
+    transform: perspective(1000px) rotateY(0deg);
+    z-index: 4;
+}
+/*SKIN*/
+.carta-componente-1 img{
+    width: var(--skale-x);
+    height: var(--skale-y);
+    box-shadow: 0 0 20px 5px rgba(0, 0, 0, 1); /* Sombra Bordes */
+    z-index: 1;
+    transition: width 1s, height 1s, background-color 1s; /* Transiciones de 1 segundo para width, height y background-color */
+}
+.carta-componente-1::before {
+    content: '';
+    position: absolute;
+    display: block;
+    left: calc(var(--position-x) - 0px);
+    top: calc(var(--position-y) - 0px);
+    width: calc(var(--skale-x) - 0px); /* Ancho fijo */
+    height: calc(var(--skale-y) - 0px); /* Alto fijo */
+    background:linear-gradient(0deg, rgba(0,0,0,1) 0%, rgb(0 0 0 / 98%) 18%, rgb(0 0 0 / 85%) 28%,rgba(94,0,106,0) 37%, rgba(255,255,255,0) 100%);
+    z-index: 2;
+}
+/*MARCO*/
+.carta-componente-2 img{
+    width: calc(var(--skale-x) + 100px); 
+    height: calc(var(--skale-y) + 100px); 
+    left: calc(var(--position-x) - 50px);
+    top: calc(var(--position-y) - 50px);
+    transform: perspective(1000px) rotateY(0deg); /* Perspectiva y rotación en el eje Y */
+    z-index: 2;
+}
+/*BORDE*/
+.carta-componente-3 img {
+    width: calc(var(--skale-x) + 135px);
+    height: calc(var(--skale-y) + 100px);
+    left: calc(var(--position-x) - 72px);
+    top: calc(var(--position-y) - 40px);
+    transform: perspective(1000px) rotateY(calc(var(--style3D) - 0deg)); /* Perspectiva y rotación en el eje Y */
+    z-index: 3; /* Ajusta el z-index según sea necesario */
+}
+/*ICONO*/
+.carta-componente-4 img {
+    width: var(--skate-icon-x);
+    width: var(--skate-icon-y);
+    left: calc(var(--position-other-x) + 80px);
+    top: calc(var(--position-other-y) - 7px);
+    border-radius: 50%; 
+    z-index: 5; /* Ajusta el z-index según sea necesario */
+}
+/*OTROS*/
+.carta-componente-5-1 img,
+.carta-componente-5-2 img,
+.carta-componente-5-3 img,
+.carta-componente-5-4 img {
+    transform:rotateZ(5deg) rotateY(322deg) rotateX(352deg);
+    width: var(--skate-other-x);
+    height: var(--skate-other-y);
+    left: var(--position-runa-x);
+    top: var(--position-runa-y);
+    z-index: 6;
+}
+.carta-componente-5-3 img,
+.carta-componente-5-4 img {
+    left: var(--position-hechizo-x);
+    top: var(--position-hechizo-y);
+}
+.carta-componente-5-1 img {
+    width: calc(var(--skate-other-x) + 5px);
+    height: calc(var(--skate-other-y) + 5px);
+    left: calc(var(--position-runa-x) - 4px);
+    top: calc(var(--position-runa-y) - 4px);
+}
+.carta-componente-5-2 img {
+    left: calc(var(--position-runa-x) + 20px);
+    top: calc(var(--position-runa-y) + 4px);
+}
+.carta-componente-5-3 img {
+    left: calc(var(--position-hechizo-x) - 33px);
+    top: calc(var(--position-hechizo-y) + 2px);
+    box-shadow:inset 0px 0px 4px 2px rgb(0 0 0 / 48%);
+}
+.carta-componente-5-4 img {
+    left: calc(var(--position-hechizo-x) + 4px);
+    top: calc(var(--position-hechizo-y) + 6px);
+    box-shadow:inset 0px 0px 4px 2px rgb(0 0 0 / 48%);
+}
+
+/* TITULOS */
+#texto-aspecto,
+#texto-invocador {
+    position: absolute;
+    display: block;
+    left: var(--position-x);
+    top: var(--position-y);
+    transform-style: preserve-3d; 
+    transform: perspective(1000px) rotateZ(7deg) rotateY(calc(var(--style3D) )) rotateX(352deg) translateX(-50%);
+
+    color: white;
+    z-index: 7;
+}
+#texto-aspecto {
+    font-size: 18px;
+    left: calc(var(--position-other-x) + 80px);
+    top: calc(var(--position-other-y) - 32px);
+}
+#texto-invocador {
+    font-size: 14px;
+    left: calc(var(--position-other-x) + 100px);
+    top: calc(var(--position-other-y) + 45px);
+}

@@ -1,0 +1,68 @@
+/* Sección principal */
+.info_buy .info_buy_section {
+    background-color: #ffffff; /* Fondo claro */
+    border: 2px solid #ccc; /* Borde gris */
+    border-radius: 10px; /* Bordes redondeados */
+    padding: 20px; /* Espacio interno */
+    margin-bottom: 20px; /* Separación entre secciones */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    transition: background-color 0.3s, border-color 0.3s, color 0.3s, width 0.3s ease, height 0.3s ease; /* Transiciones suaves */
+}
+
+/* Título Principal */
+.info_buy #info_buy_title {
+    margin: 0; /* Sin margen */
+    top: -21px; /* Ajuste vertical */
+    padding: 10px; /* Espacio interno */
+    display: inline-block; /* Adaptar al contenido */
+    background-color: #ffffff; /* Fondo claro */
+    border-radius: 0 0 10px 10px; /* Bordes inferiores curvados */  
+    font-weight: bold; /* Texto en negrita */
+    position: relative; /* Posición relativa */
+}
+
+/* Estilos para el título de envío */
+.info_buy .buy_shipping #buying-selling_title {
+    margin: 0; /* Sin margen */
+    color: #333; /* Color de texto oscuro */
+    font-size: 24px; /* Tamaño del texto */
+    font-weight: bold; /* Texto en negrita */
+}
+
+/* Título de la sección de compra */
+.info_buy .info_buy_section #info_buy_title {
+    display: inline-block; /* Adaptar al contenido */
+    border: 1px solid #ccc; /* Borde gris */
+    background-image: url('../../png_images/png_personal/BlancoTenue.png'); 
+    background-size: cover; /* Cubrir el contenedor */
+    border-radius: 0 0 10px 10px; /* Bordes inferiores curvados */  
+    font-size: 16px; /* Tamaño del texto del título */
+    font-weight: bold; /* Texto en negrita */
+    position: relative; /* Posición relativa */
+    top: -21px; /* Ajuste vertical */
+    margin: 0 -16px; /* Margen lateral */
+    padding: 3px; /* Espacio interno */
+}
+
+/* Imagen dentro de la sección */
+.info_buy img {
+    width: 100px; /* Ancho de la imagen */
+    height: 100px; /* Alto de la imagen */
+}
+
+/* Título descriptivo */
+.info_buy .title_descriptive {
+    font-weight: bold; /* Texto en negrita */
+}
+
+/* Estilos para el texto dentro de la sección */
+.info_buy .info_buy_section p,
+.info_buy .info_buy_section h4 {
+    color: #333; /* Color de texto oscuro */
+    font-family: 'Helvetica Neue', sans-serif; /* Fuente similar a la de Apple */
+}
+
+/* Efecto hover en la sección */
+.info_buy .info_buy_section:hover {
+    scale: 1.02; /* Aumentar tamaño al pasar el mouse */
+}

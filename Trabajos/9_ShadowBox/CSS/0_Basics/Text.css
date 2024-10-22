@@ -1,0 +1,5 @@
+/* TIPOGRAFÍA Y COLOR */
+h1, h2, h3, h4, h5, button, p, label {
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; /* Tipografía para títulos, botones, párrafos y etiquetas */
+    color: #333; /* Color de texto uniforme */
+}

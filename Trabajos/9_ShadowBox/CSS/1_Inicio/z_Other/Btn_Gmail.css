@@ -1,0 +1,15 @@
+/* BTN GMAIL */
+#btn_gmail {
+    position: fixed;
+    bottom: 20px; /* Distancia desde la parte inferior de la ventana */
+    right: 20px; /* Distancia desde el borde derecho de la ventana */
+    z-index: 999; /* Asegura que el botón esté sobre otros elementos */
+    background-image: url('../../../png_images/png_personal/BotonGmail/Gmail.png'); 
+    /* background-color: #007bff; /* Color de fondo del botón */
+    width: 50px; /* Ancho del botón */
+    height: 50px; /* Altura del botón */
+    border-radius: 50%; /* Bordes circulares para crear un botón redondo */
+    border: none; /* Sin borde */
+    cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+    font-size: 24px; /* Tamaño de la fuente del icono */
+  }

@@ -1,0 +1,70 @@
+/* GENERAL */
+/* Estilos del contenedor principal que agrupa los botones */
+.main_menu {
+    margin: 20px auto;
+    padding: 8px 40px; /* Espaciado interno */
+    background-color: #f4f4f4; /* Fondo claro */
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    border-radius: 20px; /* Bordes redondeados */
+    opacity: 1; /* Totalmente visible */
+}
+
+/* INDIVIDUAL */
+/* Estilos para los botones dentro del menú */
+.main_menu .buttons .btn {
+    width: 150px;
+    height: 50px;
+    border-radius: 20px; /* Bordes redondeados */
+    border: 2px solid #cccccc; /* Borde gris claro */
+    background-color: #f4f4f4; /* Fondo coincidente con el contenedor */
+    font-weight: 700; /* Texto en negrita */
+    font-size: 18px; /* Tamaño del texto */
+    padding: 10px 20px; /* Espaciado interno */
+    margin-right: 10px; /* Espacio entre botones */
+    transition: background-color 0.3s, border-color 0.3s, color 0.3s, width 0.3s, height 0.3s ease; /* Suavidad en cambios de estilo */
+    display: flex; /* Distribuye los elementos internos horizontalmente */
+    align-items: center; /* Centra verticalmente el contenido */
+    justify-content: center; /* Centra horizontalmente el contenido */
+    position: relative; /* Para futuras personalizaciones o pseudoelementos */
+    overflow: hidden; /* Oculta elementos desbordados */
+    box-sizing: border-box; /* Incluye borde en el tamaño total */
+}
+
+/* Efecto hover sobre los botones */
+.main_menu .buttons .btn:hover {
+    background-color: #e0e0e0; /* Fondo más oscuro al pasar el ratón */
+    border-color: #999999; /* Borde más oscuro */
+    color: #222222; /* Color de texto más oscuro */
+    transform: scale(1.1); /* Agranda ligeramente el botón al hacer hover */
+}
+
+/* FOTO PERFIL */
+/* Estilos del contenedor del perfil de usuario */
+#user {
+    display: flex;
+    flex-direction: column; /* Alinea elementos en columna */
+    align-items: center; /* Centra horizontalmente */
+    margin-top: 14px; /* Espaciado superior */
+}
+
+/* Estilos del botón de usuario */
+#btn_user {
+    background-color: transparent; /* Fondo transparente */
+    border: none; /* Sin borde */
+    cursor: pointer; /* Cursor de mano */
+    padding: 0; /* Sin relleno */
+}
+
+/* Estilos del nombre de usuario */
+#user_name {
+    font-size: 18px; /* Tamaño del texto */
+    margin-bottom: 10px; /* Espacio debajo del nombre */
+}
+
+/* Estilos de la imagen de perfil */
+#user_image {
+    margin: -20px; /* Ajuste de margen */
+    height: 60px; /* Altura de la imagen */
+    border-radius: 50%; /* Imagen redondeada */
+    border: 2px solid #000000; /* Borde negro */
+}

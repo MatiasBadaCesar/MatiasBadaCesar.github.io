@@ -1,0 +1,120 @@
+/* Variables */
+:root {
+    --position-x: 200px;
+    --position-y: 40px;
+    --position-other-x: calc(var(--position-x) + 20px);
+    --position-other-y: calc(var(--position-y) + 415px);   
+    --style3D: -25deg;
+}
+
+/* Contenedor general para los botones */
+.buttons-color-base {
+    display: flex;
+    margin-left: 50px; /* Posiciona el contenedor a la derecha */
+    margin-top: 80px; /* Posiciona el contenedor hacia abajo */
+}
+
+/* Contenedor de cada botón de color */
+.buttons-color {
+    width: 35px;
+    height: 370px;
+    display: flex;
+    flex-direction: column; /* Alinea los botones en columna */
+    align-items: center;
+    margin: 5px; /* Separación entre contenedores */
+    padding: 10px; /* Espacio interno del contenedor */
+    background-color: #ffffff; /* Fondo blanco */
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+/* Botones de color */
+.buttons-color button {
+    border: none;
+    border-radius: 50%; /* Botones circulares */
+    width: 21px;
+    height: 21px;
+    margin: 5px;
+    cursor: pointer;
+    border: 2px solid #6f6f6f; /* Borde gris */
+}
+
+/* Imágenes dentro de los botones */
+.buttons-color button img {
+    width: 17px;
+    height: 17px;
+    margin: -10px 0 0 -5.8px; /* Ajuste de la imagen */
+    transition: width 1s, height 1s, background-color 1s; /* Transiciones suaves */
+}
+
+/* Texto dentro de los botones, oculto por defecto */
+.buttons-color button span {
+    display: none;
+}
+
+/* Efecto al pasar el ratón sobre los botones */
+.buttons-color button:hover {
+    filter: brightness(80%); /* Oscurecer ligeramente */
+}
+
+/* Botones con imágenes de marco y borde */
+.buttons_box button {
+    background-image: url('../../../png_images/png_personal/BotonColor/marco.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.buttons_bank button {
+    background-image: url('../../../png_images/png_personal/BotonColor/borde.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+/* Clases de color para los botones */
+.blue { background: rgb(2, 124, 255); }
+.green { background: rgb(0, 149, 55); }
+.green2 { background: rgb(0, 255, 94); }
+.brown { background: rgb(150, 122, 0); }
+.red { background: rgb(154, 71, 71); }
+.red2 { background: red; }
+.violet { background: rgb(255, 0, 238); }
+
+/* Estilo de la barra deslizante de color */
+.color-sliders {
+    writing-mode: bt-lr; /* Barra vertical */
+    width: 100px;
+    margin: 0;
+    padding: 0;
+    overflow: hidden; /* Oculta el exceso de la barra */
+    outline: none; /* Sin contorno */
+    opacity: 0.7; /* Transparencia */
+    background: #b1b1b1; /* Fondo gris claro */
+    transition: opacity 0.2s; /* Transición de opacidad */
+    border-radius: 5px; /* Bordes redondeados */
+    transform: rotate(270deg); /* Rotación para el control vertical */
+    -webkit-appearance: none; /* Eliminación de estilo predeterminado en navegadores Webkit */
+    appearance: none; /* Eliminación de estilo predeterminado en otros navegadores */
+}
+
+/* Estilo del pulgar del control deslizante */
+.color-sliders::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 22px;
+    height: 22px;
+    border-radius: 50%; /* Pulgar circular */
+    background: #ffffff;
+    cursor: pointer;
+    border: 2px solid #6f6f6f; /* Borde gris */
+    transition: background 0.2s;
+}
+
+/* Cambiar opacidad al pasar el ratón sobre el control deslizante */
+.color-sliders:hover {
+    opacity: 1;
+}
+
+/* Cambiar color del pulgar al pasar el ratón */
+.color-sliders:hover::-webkit-slider-thumb {
+    background: #f0f0f0; /* Pulgar más claro */
+}

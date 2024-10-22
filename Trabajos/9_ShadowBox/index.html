@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <!-- General -->
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Cargar Datos a Shadowbox</title>
+
+        <!-- Bootstrap y JavaScript-->
+        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="z_bootstrap/css/bootstrap.min.css">
+        <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+
+        <!-- CSS -->
+        <link rel="stylesheet" href="CSS/0_Basics/Basic.css">
+        <link rel="stylesheet" href="CSS/0_Basics/Text.css">
+        <link rel="stylesheet" href="CSS/1_Inicio/1_MainMenu/MainMenu.css">
+        <link rel="stylesheet" href="CSS/1_Inicio/2_1_Card/Card.css">
+        <link rel="stylesheet" href="CSS/1_Inicio/2_1_Card/Button_Colour.css">
+        <link rel="stylesheet" href="CSS/1_Inicio/2_2_ImagesBox/Images_Box.css">
+        <link rel="stylesheet" href="CSS/1_Inicio/2_3_InterfaceCard/Interface_Btn_Card.css">
+        <link rel="stylesheet" href="CSS/1_Inicio/3_InfoBox/Info_Box.css">
+        <link rel="stylesheet" href="CSS/1_Inicio/4_InfoBuy/Info_Buy.css">
+        <link rel="stylesheet" href="CSS/1_Inicio/5_footer/Footer.css">
+        <link rel="stylesheet" href="CSS/1_Inicio/z_Other/Anim.css">
+        <link rel="stylesheet" href="CSS/1_Inicio/z_Other/Btn_Gmail.css">
+        <link rel="stylesheet" href="CSS/z_Otros/Languages.css">
+        <link rel="stylesheet" href="CSS/1_Inicio/0_Responsibe/Responsibe.css">
+        
+        <!-- JavaScript -->
+        <script src="Javascript/1_Inicio/1_MainMenu/MainMenu.js"></script>
+        <script src="Javascript/1_Inicio/2_1_Card/Card_Anim.js"></script>
+        <script src="Javascript/1_Inicio/2_1_Card/Button_Colour.js"></script>
+        <script src="Javascript/1_Inicio/2_2_ImageBox/ImageBox.js"></script>
+        <script src="Javascript/1_Inicio/2_2_ImageBox/ImageBox_Anim.js"></script>
+        <script src="Javascript/1_Inicio/z_Other/GmailButton.js"></script>
+    </head>
+    <body>
+        <!-- Menu Principal -->
+        <header>
+            <div class="container">
+                <div class="row">
+                    <div class="col-11">
+                        <div class="container main_menu">
+                            <div class="row buttons">
+                                <!-- Botón para mostrar el cuadro de carta -->
+                                <div class="col text-center">
+                                    <button type="button" class="btn btn-circle" id="btn_card" aria-label="Show card frame">Cuadro de Carta</button>
+                                </div>
+                                <!-- Botón para mostrar información adicional de la carta -->
+                                <div class="col text-center">
+                                    <button type="button" class="btn btn-circle" id="btn_extra" aria-label="Show card information">Informacion de Carta</button>
+                                </div>
+                                <!-- Botón para mostrar guía de compra -->
+                                <div class="col text-center">
+                                    <button type="button" class="btn btn-circle" id="btn_guide" aria-label="Show buying guide">¿Como Comprar?</button>
+                                </div>
+                                <!-- Botón de inscripción visible si el usuario no está logueado -->
+                                <div class="col text-center" id="inscription">
+                                    <button type="button" class="btn btn-circle" id="btn_inscription" aria-label="Inscription">Inscripcion</button>
+                                </div>
+                                <!-- Botón del usuario visible cuando hay sesión activa -->
+                                <div class="col text-center" id="user" style="display: none;">
+                                    <button id="btn_user" class="CambiarImagen" aria-label="User profile">
+                                        <div class="row">
+                                            <!-- Imagen de perfil del usuario -->
+                                            <div class="col">
+                                                <img id="user_image" src="" alt="User image">
+                                            </div>
+                                            <!-- Nombre de usuario -->
+                                            <div class="col">
+                                                <p id="user_name"></p>
+                                            </div>
+                                        </div>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Sección para cambiar el idioma -->
+                    <div class="col-1 d-flex align-items-center">
+                        <a href="#" class="icon_language" id="languages" role="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Language selection">
+                            <img alt="">
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="languages">
+                            <button id="btn_choose_es" class="btn_language" aria-label="Change language to Spanish"></button>
+                            <button id="btn_choose_en" class="btn_language" aria-label="Change language to English"></button>
+                            <button id="btn_choose_fr" class="btn_language" aria-label="Change language to French"></button>
+                        </ul>       
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- Carta y ContenedorImagenes-->
+        <div class="container card_component">
+            <div class="row">
+                <!-- Contenedor Imagenes -->
+                <div class="col-6">
+                    <!-- Cuadro de titulos -->
+                    <div class="container title_container">
+                        <div class="row">
+                            <div class="col-3">
+                                <h4 id="aspect">Aspecto</h4>
+                            </div>
+                            <div class="col-lg-5">
+                                <input type="text" class="form-control mb-2" id="name_aspect" placeholder="" maxlength="25">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-3">
+                                <h4 id="invoker">Invocador</h4>
+                            </div>
+                            <div class="col-lg-5">
+                                <input type="text" class="form-control mb-2" id="name_invoker" placeholder="" maxlength="20">
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Cuadros de Imagenes -->
+                    <div class="gallery_container" id="image-form-container">
+                        <!-- Barras de Busqueda -->
+                        <div id="search">
+                            <h3 class="text-center" id="choose_champeon">Elige tu campeon</h3>
+                            <div class="row justify-content-center">
+                                <div class="col-lg-2">
+                                    <h5 id="buscar">Buscar: </h5>
+                                </div>
+                                <div class="col-lg-5">
+                                    <input type="text" class="form-control mb-2" id="campeon-input" placeholder="">
+                                </div>
+                            </div>
+
+                            <div class="separator"></div>
+                        </div>
+
+                        <!-- Skin selection -->
+                        <div id="btnSkinReturn" class="mb-2 text-center" style="display: none;">
+                            <h3 id="choose_skin">Elige tu Skin</h3>
+                            <img class="btn_return" src="png_images/png_personal/Return.png" alt="Return">
+                        </div>
+
+                        <!-- Box selection -->
+                        <div id="gallery_box_container" style="display: none;">
+                            <h3 id="choose_box">Elige tu Marco</h3>
+                            <div class="btn_next-prev_box">
+                                <button  id="prevImageBtn"><img src="png_images/png_personal/IconPrev.png" alt="Imagen Anterior" class="button-marco"></button>
+                                <div class="container" id="gallery_box" tyle="display: none;"></div> 
+                                <button id="toggleImageBtn"><img src="png_images/png_personal/IconNext.png" alt="Alternar Imagen" class="button-marco"></button>
+                            </div>   
+                        </div>
+
+                        <!-- Icon selection -->
+                        <div id="btn_icon_return" class="mb-2 text-center" style="display: none;">
+                            <h3 id="choose_icon_text">Elige tu Icono</h3>
+                            <img class="btn_return" src="png_images/png_personal/Return.png" alt="Return">
+                        </div>
+                        <div class="container" id="gallery_icon" style="display: none;">
+                            <h3 id="choose_icon">Elige tu Icono</h3>
+
+                            <!-- Icon buttons with aria-label -->
+                            <button type="button" class="btn_icon_img btn-circle mr-5" id="btn_icon_1" aria-label="Champions icon">
+                                <div class="button-icon" id="image-icono1"></div>
+                                <span class="btn-title-icon" id="icono-campeones">Campeones</span>
+                            </button>
+                            <button type="button" class="btn_icon_img btn-circle mr-5" id="btn_icon_2" aria-label="Chibis icon">
+                                <div class="button-icon" id="image-icono2"></div>
+                                <span class="btn-title-icon" id="icono-chibis">Chibis</span>
+                            </button>
+                            <button type="button" class="btn_icon_img btn-circle mr-5" id="btn_icon_3" aria-label="Leagues icon">
+                                <div class="button-icon" id="image-icono3"></div>
+                                <span class="btn-title-icon" id="icono-ligas">Ligas</span>
+                            </button>
+                            <button type="button" class="btn_icon_img btn-circle mr-5" id="btn_icon_4" aria-label="Themes icon">
+                                <div class="button-icon" id="image-icono4"></div>
+                                <span class="btn-title-icon" id="icono-tematicas">Tematicas</span>
+                            </button>
+                            <button type="button" class="btn_icon_img btn-circle mr-5" id="btn_icon_5" aria-label="Worlds icon">
+                                <div class="button-icon" id="image-icono5"></div>
+                                <span class="btn-title-icon" id="icono-worlds">Worlds</span>
+                            </button>
+                        </div>
+
+                        <!-- Other elements -->
+                        <div class="container" id="gallery_other" style="display: none;">
+                            <h5 class="text-center" id="elige-tus-runas">¡Elige tus Runas!</h5>
+                            <div id="gallery_other_1" class="gallery_other_style"></div>
+                            <div id="gallery_other_2" class="gallery_other_style"></div>
+                            <br>
+                            <h5 class="text-center" id="elige-tus-hechizos">¡Elige tus Hechizos!</h5>
+                            <div id="gallery_other_3" class="gallery_other_style"></div>
+                            <div id="gallery_other_4" class="gallery_other_style"></div>
+                        </div>
+
+                        <!-- Image galleries -->
+                        <div class="gallery" id="gallery_1"></div>
+                        <div class="gallery" id="gallery_2"></div>
+
+                        <!-- Buy buttons -->
+                        <br><br>
+                        <div class="container">
+                            <div class="row">
+                                <button class="button_buy" id="btn_buy_false" aria-label="Register and buy">¡Registrese y Compre!</button>
+                                <button class="button_buy" id="btn_buy" style="display: none;" aria-label="Buy">¡Comprar!</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Carta -->
+                <div class="col-md-6 fixed-images" id="card_complement">
+                    <div id="card">
+                        <!-- Card details -->
+                        <img src="png_images/png_personal/Cara1.png" alt="Face image" id="card_detail">
+                        <img src="png_images/png_skin/tristana/tristana_blossom.png" alt="Tristana skin image" id="card_skin">
+                        <div id="shadow"></div>
+                        <img src="png_images/png_box/Cuadro1.png" alt="Frame image" id="card_box">
+                        <img src="png_images/png_bank/bank1.png" alt="Border image" id="card_bank">
+                        <img src="png_images/png_icon/tristana2.png" alt="Icon image" id="card_icon">
+                        <img src="png_images/png_other/runa1.png" alt="Rune 1 image" class="card_other" id="card_other_1">
+                        <img src="png_images/png_other/electrocute.png" alt="Rune 2 image" class="card_other" id="card_other_2">
+                        <img src="png_images/png_other/Flash.png" alt="Flash spell image" class="card_other card_spell" id="card_other_3">
+                        <img src="png_images/png_other/Ignite.png" alt="Ignite spell image" class="card_other card_spell" id="card_other_4">
+                        
+                        <!-- Card titles -->
+                        <div class="card_title">
+                            <p id="text_aspect">Tristana Flor Espiritual</p>
+                            <p id="text_invoker">Javier</p>
+                        </div>
+                    </div>
+                    <!-- Colores -->
+                    <div class="buttons-color-base" id="imagenes-principales">
+                        <!-- Frame color selection -->
+                        <div class="buttons-color buttons_box">
+                            <button class="blue" id="boxBlue" aria-label="Blue frame"></button>
+                            <button class="green" id="boxGreen" aria-label="Green frame"></button>
+                            <button class="green2" id="boxGreen2" aria-label="Lighter green frame"></button>
+                            <button class="brown" id="boxBrown" aria-label="Brown frame"></button>
+                            <button class="red" id="boxRed" aria-label="Red frame"></button>
+                            <button class="red2" id="boxRed2" aria-label="Lighter red frame"></button>
+                            <button class="violet" id="boxViolet" aria-label="Violet frame"></button>
+                            <button id="boxNone" aria-label="No frame"></button>
+                            <br><br>
+                            <input type="range" min="0" max="360" value="180" class="color-sliders" id="marco-slider">
+                        </div>
+                    
+                        <!-- Border color selection -->
+                        <div class="buttons-color buttons_bank">
+                            <button class="blue" id="bankBlue" aria-label="Blue border"></button>
+                            <button class="green" id="bankGreen" aria-label="Green border"></button>
+                            <button class="green2" id="bankGreen2" aria-label="Lighter green border"></button>
+                            <button class="brown" id="bankBrown" aria-label="Brown border"></button>
+                            <button class="red" id="bankRed" aria-label="Red border"></button>
+                            <button class="red2" id="bankRed2" aria-label="Lighter red border"></button>
+                            <button class="violet" id="bankViolet" aria-label="Violet border"></button>
+                            <button id="bankNone" aria-label="No border"></button>
+                            <br><br>
+                            <input type="range" min="0" max="360" value="180" class="color-sliders" id="borde-slider">
+                        </div>
+                    </div>
+                </div>
+            </div>      
+        </div>  
+
+        <!-- Carta Interfaz Botones -->
+        <div class="container">
+            <br><br><br><br> 
+            <div class="row">
+                <div class="col-7 card_interfaces">
+                    <div class="d-flex justify-content-between btn_card_interfaces">
+                        <!-- Button to select skin component -->
+                        <button id="btnSkin" class="btn btn-circle mb-2" aria-label="Select skin component">
+                            <img src="png_images/png_personal/1.png" alt="Skin Icon" class="btn-icon">
+                            <span class="texto-componente-carta">Skin</span>
+                        </button>
+
+                        <!-- Button to select frame component -->
+                        <button id="btnMarco" class="btn btn-circle mb-2" aria-label="Select frame component">
+                            <img src="png_images/png_personal/2.png" alt="Frame Icon" class="btn-icon">
+                            <span class="texto-componente-carta">Marco</span>
+                        </button>
+                        
+                        <!-- Button to select border component -->
+                        <button id="btnBorde" class="btn btn-circle mb-2" aria-label="Select border component">
+                            <img src="png_images/png_personal/3.png" alt="Border Icon" class="btn-icon">
+                            <span class="texto-componente-carta">Borde</span>
+                        </button>
+                        
+                        <!-- Button to select icon component -->
+                        <button id="btnIcono" class="btn btn-circle mb-2" aria-label="Select icon component">
+                            <img src="png_images/png_personal/4.png" alt="Icon Icon" class="btn-icon">
+                            <span class="texto-componente-carta">Icono</span>
+                        </button>
+                        
+                        <!-- Button to select other components -->
+                        <button id="btnOtros" class="btn btn-circle mb-2" aria-label="Select other components">
+                            <img src="png_images/png_personal/5.png" alt="Other Icon" class="btn-icon">
+                            <span class="texto-componente-carta">Otros</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <br><br><br>
+        </div>
+
+        <!-- Animacion de marea-->
+        <div class="anim">
+            <div class="anim_grey_2">
+                <img class="wawe_1" src="png_images/png_personal/Animacion/olaGris2.png" alt="Anuncio">
+                <img class="wawe_2" src="png_images/png_personal/Animacion/olaGris2.png" alt="Anuncio">
+                <img class="wawe_3" src="png_images/png_personal/Animacion/olaGris2.png" alt="Anuncio">
+            </div>
+            <div class="anim_grey_1">
+                <img class="wawe_1" src="png_images/png_personal/Animacion/olaGris1.png" alt="Anuncio">
+                <img class="wawe_2" src="png_images/png_personal/Animacion/olaGris1.png" alt="Anuncio">
+                <img class="wawe_3" src="png_images/png_personal/Animacion/olaGris1.png" alt="Anuncio">
+            </div>
+            <div class="anim_white">
+                <img class="wawe_1" src="png_images/png_personal/Animacion/olaBlanca.png" alt="Anuncio">
+                <img class="wawe_2" src="png_images/png_personal/Animacion/olaBlanca.png" alt="Anuncio">
+                <img class="wawe_3" src="png_images/png_personal/Animacion/olaBlanca.png" alt="Anuncio">
+            </div>
+            <img src="png_images/png_personal/Animacion/olaVacia.png" alt="Anuncio">
+        </div>
+
+        <!-- Sección Extra Carta -->
+        <div class="info_box">
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <div class="row">
+                            <section class="section">
+                                <div class="text-right">
+                                    <p class="titulo" id="infobox_section_title_1">Un título</p>
+                                </div>
+                                <h4 class="title_descriptive" id="infobox_title_descriptive_1">Una descripción corta</h4>
+                                <p id="infobox_section_descriptive_1">Esta es una descripción extensa</p>
+                            </section>
+                        </div>
+                        <div class="row">
+                            <section class="section">
+                                <div class="text-right">
+                                    <p class="titulo" id="infobox_section_title_2">Un título</p>
+                                </div>
+                                <h4 class="title_descriptive" id="infobox_title_descriptive_2">Una descripción corta</h4>
+                                <p id="infobox_section_descriptive_2">Esta es una descripción extensa</p>
+                            </section>
+                        </div>
+                        <div class="row">
+                            <section class="section">
+                                <div class="text-right">
+                                    <p class="titulo" id="infobox_section_title_3">Un título</p>
+                                </div>
+                                <h4 class="title_descriptive" id="infobox_title_descriptive_3">Una descripción corta</h4>
+                                <p id="infobox_section_descriptive_3">Esta es una descripción extensa</p>
+                            </section>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="row">
+                            <br><br>       
+                        </div>
+                        <div class="row">
+                            <div class="col text-center">
+                                <!-- Carrusel de imágenes -->
+                                <div class="carousel slide" id="slideshow" data-bs-ride="carousel">
+                                    <div class="carousel-inner">
+                                        <div class="carousel-item active">
+                                            <img src="png_images/png_skin/ksante/ksante.png" class="imagen">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="png_images/png_skin/aatrox/aatrox_justicia_suprema.png" class="imagen">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="png_images/png_skin/braum/braum.png" class="imagen">
+                                        </div>
+                                    </div>
+                                    <!-- Botones de control del carrusel -->
+                                    <button class="carousel-control-prev btn btn-dark" type="button" data-bs-target="#slideshow" data-bs-slide="prev" aria-label="Anterior">
+                                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    </button>
+                                    <button class="carousel-control-next btn btn-dark" type="button" data-bs-target="#slideshow" data-bs-slide="next" aria-label="Siguiente">
+                                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Sección Informativa -->
+        <div class="info_buy">
+            <div class="container">
+                <div class="row">
+                    <div class="col text-center">
+                        <h2 id="info_buy_title">¿Sabes cómo comprar?</h2>
+                    </div>
+                </div>
+                <div class="row container buy_shipping">
+                    <div class="col text-center info_buy_section">
+                        <img src="png_images/png_personal/Listo.png" alt="Icono de envío" width="120" height="120">
+                        <h3 id="buying-selling_title">Envío a México y Argentina</h3>
+                        <p id="buying-selling_descriptive">Actualmente estamos trabajando para...</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col text-left">
+                        <section class="info_buy_section">
+                            <div class="text-right">
+                                <p id="info_buy_section_title_1">Un título</p>
+                            </div>
+                            <div class="text-left">
+                                <img src="png_images/png_personal/Upps.png" alt="Imagen informativa">
+                            </div>
+                            <h4 class="title_descriptive" id="info_buy_section_descriptive_title_1">Una descripción corta</h4>
+                            <p id="info_buy_section_descriptive_1">Esta es una descripción extensa</p>
+                        </section>
+                    </div>
+                    <div class="col text-left">
+                        <section class="info_buy_section">
+                            <div class="text-right">
+                                <p id="info_buy_section_title_2">Un título</p>
+                            </div>
+                            <div class="text-left">
+                                <img src="png_images/png_personal/Upps.png" alt="Imagen informativa">
+                            </div>
+                            <h4 class="title_descriptive" id="info_buy_section_descriptive_title_2">Una descripción corta</h4>
+                            <p id="info_buy_section_descriptive_2">Esta es una descripción extensa</p>
+                        </section>
+                    </div>
+                    <div class="col text-left">
+                        <section class="info_buy_section">
+                            <div class="text-right">
+                                <p id="info_buy_section_title_3">Un título</p>
+                            </div>
+                            <div class="text-left">
+                                <img src="png_images/png_personal/Upps.png" alt="Imagen informativa">
+                            </div>
+                            <h4 class="title_descriptive" id="info_buy_section_descriptive_title_3">Una descripción corta</h4>
+                            <p id="info_buy_section_descriptive_3">Esta es una descripción extensa</p>
+                        </section>
+                    </div>
+                    <div class="col text-left">
+                        <section class="info_buy_section">
+                            <div class="text-right">
+                                <p id="info_buy_section_title_4">Un título</p>
+                            </div>
+                            <div class="text-left">
+                                <img src="png_images/png_personal/Upps.png" alt="Imagen informativa">
+                            </div>
+                            <h4 class="title_descriptive" id="info_buy_section_descriptive_title_4">Una descripción corta</h4>
+                            <p id="info_buy_section_descriptive_4">Esta es una descripción extensa</p>
+                        </section>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+
+    <footer class="bg-dark text-light py-4 pie-pagina">
+        <div class="container">
+            <div class="row text-center">   
+                <div class="col">
+                    <p class="mb-0">© 2024 Todos los derechos reservados - <a href="https://www.ejemplo.com" class="text-light">www.ejemplo.com</a></p>
+                </div>
+                <div class="col">
+                    <p class="mb-0">Diseñado por <a href="https://www.tudiseñador.com" class="text-light">Tu Diseñador</a></p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Botón Gmail asistencia para Clientes -->
+    <button id="btn_gmail"></button>
+
+    <script src="Javascript/z_Other/Language.js"></script>
+    <script src="Javascript/1_Inicio/z_Other/VerificarPerfil.js"></script>
+    <script src="z_bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/0.4.1/html2canvas.min.js"></script>
+</html>

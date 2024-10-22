@@ -1,0 +1,283 @@
+
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <!-- General -->
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Cargar Datos a Shadowbox</title>
+        <!-- Bootstrap y JavaScript-->
+        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/2.0.5/FileSaver.min.js"></script>
+        <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+        <!-- CSS -->
+        <link rel="stylesheet" href="CSS/0_Basics/Basic.css">
+        <link rel="stylesheet" href="CSS/0_Basics/Text.css">
+        <link rel="stylesheet" href="CSS/1_Inicio/1_MainMenu/MainMenu.css">
+        <link rel="stylesheet" href="CSS/1_inicio/5_footer/Footer.css">
+        <link rel="stylesheet" href="CSS/3_Buy/0_Basics/Basics.css">
+        <link rel="stylesheet" href="CSS/3_Buy/1_MainMenu/MainMenu.css">
+        <link rel="stylesheet" href="CSS/3_Buy/2_Forms/Formulario1.css">
+        <link rel="stylesheet" href="CSS/3_Buy/2_Forms/Formulario2.css">
+        <link rel="stylesheet" href="CSS/3_Buy/2_Forms/Formulario3.css">
+        <link rel="stylesheet" href="CSS/3_Buy/2_Forms/MedioPago.css">
+        <link rel="stylesheet" href="CSS/3_Buy/3_Card/Card.css">
+        <link rel="stylesheet" href="CSS/z_Otros/Languages.css">
+        <!--JavaScript-->
+        <script src="Javascript/3_Buy/0_Basics/Basic.js"></script>
+        <script src="Javascript/3_Buy/1_MainMenu/MainMenu.js"></script>
+        <script src="Javascript/3_Buy/5_Card/Load_Card.js"></script>
+        
+    </head>
+    <body>
+        <header>
+        <!-- Menu Principal-->
+            <div class="container">
+                <div class="row">
+                    <div class="col-8">
+                        <div class="container main_menu">
+                            <div class="row buttons">
+                                <div class="col text-center">
+                                    <button type="button" class="btn btn-circle" id="btnInicio">Inicio</button>
+                                </div>
+                                <!-- Botón del usuario visible cuando hay sesión activa -->
+                                <div class="col text-center" id="usuarioActivo">
+                                    <button id="btn_user" class="CambiarImagen">
+                                        <div class="row">
+                                            <div class="col"><img id="user_image" src="" alt="Imagen de usuario"></div>
+                                            <div class="col"><p id="user_name">Perfil vacio</p></div>
+                                        </div>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--
+                    <div class="container main_menu">
+                        <div class="row buttons">
+                            
+                            <div class="col text-center">
+                                <button type="button" class="btn btn-circle" id="btnInicio">Inicio</button>
+                            </div>
+
+                            <div class="col text-center" id="user" style="display: none;">
+                                <button id="btn_user" class="CambiarImagen" aria-label="User profile">
+                                    <div class="row">
+                                        <div class="col">
+                                            <img id="user_image" src="" alt="User image">
+                                        </div>
+                                        <div class="col">
+                                            <p id="user_name"></p>
+                                        </div>
+                                    </div>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    -->
+                    <!-- Selector de Idioma -->
+                    <div class="col-1 d-flex align-items-center">
+                        <a href="#" class="icon_language" id="languages" role="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Language selection">
+                            <img alt="">
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="languages">
+                            <button id="btn_choose_es" class="btn_language" aria-label="Cambiar idioma a Español"></button>
+                            <button id="btn_choose_en" class="btn_language" aria-label="Cambiar idioma a Inglés"></button>
+                            <button id="btn_choose_fr" class="btn_language" aria-label="Cambiar idioma a Francés"></button>
+                        </ul>       
+                    </div>
+                </div>
+            </div>
+        </header>
+       
+        <div class="container mt-5">
+            <div class="row">
+                <!-- Comprar -->  
+                <div class="col-1">
+                </div>
+                <div class="col-4">
+                    <!-- Elegir Tamaño -->
+                    <div class="etapa1">
+                        <div class="elegir-variantes">
+                            <h1 id="tituloPrincipal">¡Opciones finales!</h1>
+                            <br>
+                            <div class="row">
+                                <div class="col-5 btn-group-vertical tamaño">
+                                    <h4 id="eligeTamaño">Elige Tamaño</h4>
+                                    <button type="button" class="btn-primary" id="tamaño1">M 16x28</button>
+                                    <button type="button" class="btn-primary" id="tamaño2">L 35x20</button>
+                                    <button type="button" class="btn-primary" id="tamaño3">XL 58x34</button>
+                                    <br>
+                                    <div class="carta_tamaño">
+                                        <img src="png_images/png_personal/Comprar/tamaño/size_M.png" alt="" class="imagen1" id="tamañ1">
+                                        <img src="png_images/png_personal/Comprar/tamaño/size_L.png" alt="" class="imagen1" id="tamañ2" style="display: none;">
+                                        <img src="png_images/png_personal/Comprar/tamaño/size_XL.png" alt="" class="imagen1" id="tamañ3" style="display: none;">
+                                    </div>
+                                </div>
+                                <div class="col-5 btn-group-vertical relieve">
+                                    <h4 id="eligeRelieve">Elige Relieve</h4>
+                                    <button type="button" class="btn-primary" id="relieve1">Relieve 1</button>
+                                    <button type="button" class="btn-primary" id="relieve2">Relieve 2</button>
+                                    <button type="button" class="btn-primary" id="relieve3">Relieve 3</button>
+                                    <br>
+                                    <div class="carta_relieve">
+                                        <img src="png_images/png_personal/Comprar/relieve/1D_FULL.png" alt="" class="imagen2" id="reliev1">
+                                        <img src="png_images/png_personal/Comprar/relieve/2D_FULL.png" alt="" class="imagen2" id="reliev2" style="display: none;">
+                                        <img src="png_images/png_personal/Comprar/relieve/3D_FULL.png" alt="" class="imagen2" id="reliev3" style="display: none;">
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Precios -->
+                            <br>
+                            <br>
+                            <div class="Precios">
+                                <h2 class="titulo-total" id="total">Total :</h2>
+                                <h2 class="precio">0</h2>
+                            </div>
+                        </div>
+                        <div class="text-center siguiente">
+                            <button type="button" class="btn btn-primary" id="siguiente">Siguiente</button>
+                        </div>
+                    </div>
+                    <!-- Formulario de datos-->
+                    <div class="etapa2" style="display: none;">
+                        <div class="formulario">
+                            <form id="formularioEnvio" method="post">
+                                <div class="text-center siguiente">
+                                    <button type="button" class="btn btn-primary" id="atras">Retroceder</button>
+                                </div>
+                                <br>
+                                <h3 id="tituloFormulario">Formulario de Envío</h3>
+                                <div class="linea-gris"></div>
+                                
+                                <label id="etiquetaNombre" for="nombre">Nombre</label><br>
+                                <input type="text" id="nombre" name="nombre" placeholder="" required><br><br>
+                    
+                                <label id="etiquetaPais" for="Pais">Pais</label><br>
+                                <input type="text" id="Pais" name="Pais" placeholder="" required><br><br>
+                    
+                                <label id="etiquetaCiudad" for="ciudad">Ciudad</label><br>
+                                <input type="text" id="ciudad" name="ciudad" placeholder="" required><br><br>
+
+                                <label id="etiquetaCodigo" for="Codigo">Codigo Postal</label><br>
+                                <input type="text" id="Codigo" name="Codigo" placeholder="" required><br><br>
+                                
+                                <label id="etiquetaDireccion" for="direccion">Barrio, calle y numeracion</label><br>
+                                <input type="text" id="direccion" name="direccion" placeholder="" required><br><br>
+
+                                <label id="etiquetaCelular" for="celular">Celular de contacto</label><br>
+                                <input type="tel" id="celular" name="celular" placeholder="" required><br><br>
+                    
+                                <div class="text-center siguiente">
+                                    <br>
+                                    <br>
+                                    <button type="button" class="btn btn-primary" id="siguiente2">Siguiente</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>  
+                    <!--Tipo de pago -->
+                    <div class="etapa3" style="display: none;">
+                        <div class="text-center siguiente">
+                            <button type="button" class="btn btn-primary" id="atras2">Retroceder</button>
+                        </div>
+                        <div class="formulario">
+                            <!-- Opciones de Pago -->
+                            <div class="medio-pago">
+                                <br>
+                                <h2 id="tituloMedioPago">Elige medio de pago</h2>
+                                <p id="textoDescriptivo">Este es un texto descriptivo explicando cómo funciona el medio de transporte y la demora aproximada de 6 días para cada entrega.</p>
+                                <!-- Precios -->
+                                <div class="Precios">
+                                    <h2 class="titulo-total" id="tituloPrecio">Precio Final :</h2>
+                                    <h2 class="precio2" id="precio">0</h2>
+                                </div>
+                                <!---->
+                                <div class="linea-gris"></div>
+                                <!---->
+                                <div class="row">
+                                    <div class="col-md-6">
+                                    <a href="link-del-primer-medio-de-pago"><img src="png_images/png_personal/Comprar/paypal.png" alt="Medio de Pago 1"></a>
+                                    </div>
+                                    <div class="col-md-6">
+                                    <a href="link-del-segundo-medio-de-pago"><img src="png_images/png_personal/Comprar/stripe.png" alt="Medio de Pago 2"></a>
+                                    </div>
+                                </div>
+                                <!---->
+                                <div class="linea-gris"></div>
+                                <!---->
+                            </div> 
+                            <!-- Guardar Comprobante y Enviar Orden-->
+                            <div class="comprobante-pago">
+                                <form id="formularioComprobante">
+                                    <!-- Componente de imagen como botón para seleccionar la imagen -->
+                                    <label for="inputImagenComprobante" style="cursor: pointer;">
+                                        <img id="imagenComprobante" src="png_images/png_personal/Comprobante/CargueAquiComprobante.png" alt="Imagen de comprobante" style="width: 100px; height: 100px;">
+                                    </label>    
+                                    <!-- Input oculto para cargar la imagen -->
+                                    <input id="inputImagenComprobante" type="file" name="comprobante" style="display: none;" accept="image/*">
+                                    <br>
+                                    <br>
+                                    <!-- Botón para enviar el formulario -->
+                                </form>     
+                                <button class="EnviarOrden" id="EnviarOrdenFalso" type="submit">Subir Comprobante y Finalizar</button>   
+                                <button class="EnviarOrden" id="EnviarOrden" type="submit" style="display: none;">Subir Comprobante y Finalizar</button>                     
+                            </div>     
+                        </div>
+                    </div>           
+                </div>
+                
+                <div class="col-1">
+                    <div class="linea-gris-vertical"></div>
+                </div>
+
+                <!-- Producto/Carta -->
+                <div class="col-1">
+                    <div class="linea-gris-vertical2"></div>
+                </div>
+                <div class="col-4">
+                    <div class="imagenes-principales">
+                        <!-- Producto --> 
+                        <div class="row text-center">
+                            <h1 class="Producto-descripcion" id="Producto-descripcion">Producto Elegido</h1> 
+                        </div> 
+                        <div class="row">
+                            <div id="card">
+                                <!-- Card details -->
+                                <img src="png_images/png_personal/Cara1.png" alt="Face image" id="card_detail">
+                                <img src="png_images/png_skin/tristana/tristana_blossom.png" alt="Tristana skin image" id="card_skin">
+                                <div id="shadow"></div>
+                                <img src="png_images/png_box/Cuadro1.png" alt="Frame image" id="card_box">
+                                <img src="png_images/png_bank/bank1.png" alt="Border image" id="card_bank">
+                                <img src="png_images/png_icon/tristana2.png" alt="Icon image" id="card_icon">
+                                <img src="png_images/png_other/runa1.png" alt="Rune 1 image" class="card_other" id="card_other_1">
+                                <img src="png_images/png_other/electrocute.png" alt="Rune 2 image" class="card_other" id="card_other_2">
+                                <img src="png_images/png_other/Flash.png" alt="Flash spell image" class="card_other card_spell" id="card_other_3">
+                                <img src="png_images/png_other/Ignite.png" alt="Ignite spell image" class="card_other card_spell" id="card_other_4">
+                                
+                                <!-- Card titles -->
+                                <div class="card_title">
+                                    <p id="text_aspect"></p>
+                                    <p id="text_invoker"></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>    
+                <div class="col-1">
+                </div>    
+            </div>       
+        </div>
+    </body>
+
+    <script src="Javascript/3_Buy/2_Form_Card/price_size.js"></script>
+    <script src="Javascript/3_Buy/2_Form_Data/form_data.js"></script>
+    <script src="Javascript/3_Buy/2_Form_Pay/form_pay.js"></script>
+    <script src="Javascript/3_Buy/3_Pay/CargarVenta.js"></script>
+    <script src="Javascript/3_Buy/z_other/VerificarPerfil.js"></script>
+    <script src="Javascript/z_Other/Language.js"></script>
+
+    <script src="z_bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/0.4.1/html2canvas.min.js"></script>
+</html>

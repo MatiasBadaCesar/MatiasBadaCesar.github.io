@@ -4,10 +4,10 @@ ini_set('display_errors', 0);
 ini_set('display_startup_errors', 0);
 error_reporting(0);
 // Conexión a la base de datos
-$host = "b1clxpxdrpcigs7sg9xc-mysql.services.clever-cloud.com";
-$dbname = "b1clxpxdrpcigs7sg9xc";
-$user = "ul8oe8f8xiygp0tx";
-$password = "vAzDek28JQqPD7rBGg1L";
+$host = "";
+$dbname = "";
+$user = "";
+$password = "";
 
 // Crear la conexión
 $conn = new mysqli($host, $user, $password, $dbname);

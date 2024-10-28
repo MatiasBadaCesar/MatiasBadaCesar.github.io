@@ -1,9 +1,9 @@
 <?php
 // Conexión a la base de datos (debes proporcionar tus propias credenciales de forma segura)
-$host = "b1clxpxdrpcigs7sg9xc-mysql.services.clever-cloud.com";
-$dbname = "b1clxpxdrpcigs7sg9xc";
-$user = "ul8oe8f8xiygp0tx";
-$password = "vAzDek28JQqPD7rBGg1L";
+$host = "";
+$dbname = "";
+$user = "";
+$password = "";
 
 // Crear la conexión
 $conn = new mysqli($host, $user, $password, $dbname);
